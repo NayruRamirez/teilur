@@ -6,6 +6,8 @@ let cartTokens = document.getElementById('tokensQuantity')
 let totalTokensPrice = document.getElementById('totalValue')
 const allTokensAdded = []
 const addToken = function(index, deadline, authorLink, previewLink, authorImg, title,price,quantity, likes){
+    cartTokens.textContent = `Tokens Quantity: ${allTokensAdded.length}`
+        totalTokensPrice.textContent = `Total amount: ${tokensPrice}`
     const tokenAdded = {
         index : index,
         deadline : deadline,
@@ -19,8 +21,8 @@ const addToken = function(index, deadline, authorLink, previewLink, authorImg, t
     }
     tokensPrice += tokenAdded.price
     allTokensAdded.push(tokenAdded)
-    cartTokens.value = `Tokens Quantity: ${allTokensAdded.length}`
-    totalTokensPrice.value = `Total amount: ${tokensPrice}`
+
+      
   
 }
 

@@ -1,6 +1,20 @@
 import React, { Component } from "react";
 import dummyData from "./poolsData";
+import { Link } from '@reach/router';
 
+
+const NavLink = props => (
+  <Link 
+    {...props}
+    getProps={({ isCurrent }) => {
+      // the object returned here is passed to the
+      // anchor element's props
+      return {
+        className: isCurrent ? 'active' : 'non-active',
+      };
+    }}
+  />
+);
 export default class Responsive extends Component {
     
 
@@ -24,16 +38,16 @@ export default class Responsive extends Component {
 
  render() {
   return (
-      <div>
+
         <div class="card text-center" style={{width: `18rem`}}>
-            <div class="card-body">
+            <div class="card-body" style={{display: "flex", flexDirection : "column", alignItems : "center"}}>
                 <h5 class="card-title" id="card-title">Your tokens cart</h5>
                 <p class="card-text" id="tokensQuantity">Tokens quantity : </p>
                 <p class="card-text" id="totalValue">Total Value : </p>
-                <button class="" style={{width:`80%`, backgroundColor:  `#114DC5`, color: `white`, border:`transparent`, borderRadius: `5px`}}>Buy</button>
+                <NavLink to="/colection" style={{width : `80%`, height : `15%`, backgroundColor : `#114DC5`, color : `white`, borderRadius : `5px`}}>Buy</NavLink>
             </div>
         </div>
-      </div>      
+    
     );
 }
 }

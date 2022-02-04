@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import Clock from "./Clock";
 import dummyData from "./poolsData";
 
 const Outer = styled.div`
@@ -12,28 +11,6 @@ const Outer = styled.div`
   border-radius: 8px;
 `;
 
-let tokensQuantity= 0
-let tokensPrice = 0
-let nftQuantity = 100
-const allTokensAdded = []
-const addToken = function(index, deadline, authorLink, previewLink, authorImg, title,price, likes){
-    const tokenAdded = {
-        index : index,
-        deadline : deadline,
-        authorLink : authorLink,
-        previewLink : previewLink,
-        authorImg : authorImg,
-        title : title,
-        price : price,
-        quantity : tokensQuantity,
-        likes : likes
-    }
-    tokensQuantity += 1
-    tokensPrice += tokenAdded.price
-    allTokensAdded.push(tokenAdded)
-    nftQuantity -= 1
-  
-}
 export default class Responsive extends Component {
     
 
@@ -83,7 +60,7 @@ export default class Responsive extends Component {
                                 On sale: <span id="onsale">{nft.quantity}</span>
                             </div>
                             <div className="nft__item_action">
-                                <span onClick={()=>addToken(nft.index, nft.deadline, nft.authorLink, nft.previewLink, nft.authorImg, nft.title, nft.price, nft.quantity, nft.likes)}>Buy more</span>
+                                <span>Buy more</span>
                             </div>
                             <div className="nft__item_like">
                                 <i className="fa fa-heart"></i><span>{nft.likes}</span>
