@@ -44,7 +44,7 @@ export default class Responsive extends Component {
                 <h5 class="card-title" id="card-title">Your tokens cart</h5>
                 <p class="card-text" id="tokensQuantity">Tokens quantity : </p>
                 <p class="card-text" id="totalValue">Total Value : </p>
-                <NavLink to="/colection" style={{width : `80%`, height : `15%`, backgroundColor : `#114DC5`, color : `white`, borderRadius : `5px`}}>Buy</NavLink>
+                <NavLink to="/colection" style={{width : `80%`, height : `15%`, backgroundColor : `#114DC5`, color : `white`, borderRadius : `5px`}} onClick={tokens()} id="buy">Buy</NavLink>
             </div>
         </div>
     
