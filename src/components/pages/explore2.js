@@ -2,6 +2,7 @@ import React from 'react';
 import ColumnNewThreeCol from '../components/ColumnNewThreeCol';
 import Footer from '../components/footer';
 import { createGlobalStyle } from 'styled-components';
+import Cart from '../components/Cart';
 
 const GlobalStyles = createGlobalStyle`
   .navbar {
@@ -17,7 +18,7 @@ const explore= () => (
         <div className='row'>
         <div className="spacer-double"></div>
 
-          <div className='col-md-3'>
+          <div className='col-md-2'>
 
           <div className="item_filter_group">
               <h4>Verticals</h4>
@@ -70,8 +71,11 @@ const explore= () => (
 
           </div>
 
-          <div className="col-md-9">
+          <div className="col-md-7">
             <ColumnNewThreeCol/>
+          </div>
+          <div className="col-md-2">
+            <Cart></Cart>
           </div>
         </div>
       </section>

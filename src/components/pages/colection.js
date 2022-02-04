@@ -1,7 +1,6 @@
 import React from "react";
 import ColumnZero from '../components/ColumnZero';
 import ColumnZeroTwo from '../components/ColumnZeroTwo';
-
 import Footer from '../components/footer';
 import { createGlobalStyle } from 'styled-components';
 import Account from './account';

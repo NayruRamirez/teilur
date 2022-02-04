@@ -12,8 +12,11 @@ const Outer = styled.div`
   border-radius: 8px;
 `;
 
+let tokensQuantity= 0
+let tokensPrice = 0
+let nftQuantity = 100
 const allTokensAdded = []
-const addToken = function(index, deadline, authorLink, previewLink, authorImg, title, price, quantity, likes){
+const addToken = function(index, deadline, authorLink, previewLink, authorImg, title,price, likes){
     const tokenAdded = {
         index : index,
         deadline : deadline,
@@ -22,13 +25,14 @@ const addToken = function(index, deadline, authorLink, previewLink, authorImg, t
         authorImg : authorImg,
         title : title,
         price : price,
-        quantity : quantity,
+        quantity : tokensQuantity,
         likes : likes
     }
-    
-    return(
-        console.log(allTokensAdded.push(tokenAdded))
-    )
+    tokensQuantity += 1
+    tokensPrice += tokenAdded.price
+    allTokensAdded.push(tokenAdded)
+    nftQuantity -= 1
+  
 }
 export default class Responsive extends Component {
     
@@ -53,48 +57,43 @@ export default class Responsive extends Component {
 
  render() {
   return (
-    <div className='row'>
-        {this.state.nfts.map( (nft, index) => (
-            <div key={index} className="d-item col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div className="nft__item">
-                    <div className="de_countdown">
-                    <Clock deadline={nft.deadline} />
-                    </div>
-                    <div className="author_list_pp">
-                        <span onClick={()=> window.open(nft.authorLink, "_self")}>                                    
-                            <img className="lazy" src={nft.authorImg} alt=""/>
-                            <i className="fa fa-check"></i>
-                        </span>
-                    </div>
-                    <div className="nft__item_wrap" style={{height: `${this.state.height}px`}}>
-                      <Outer>
-                        <span onClick={()=> window.open(nft.previewLink, "_self")}>
-                            <img onLoad={this.onImgLoad} src={nft.previewImg} className="lazy nft__item_preview" alt=""/>
-                        </span>
-                      </Outer>
-                    </div>
-                    <div className="nft__item_info">
-                        <span onClick={()=> window.open(nft.nftLink, "_self")}>
-                            <h4>{nft.title}</h4>
-                        </span>
-                        <div className="nft__item_price">
-                            {nft.price}<span></span>
+            <div>
+            {this.state.nfts.map( (nft, index) => (
+                <div key={index} className="d-item col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div className="nft__item">
+                        
+                        <div className="author_list_pp">
+                            
                         </div>
-                        <div className="nft__item_price">
-                            On sale: <span>{nft.quantity}</span>
+                        <div className="nft__item_wrap" style={{height: `${this.state.height}px`}}>
+                        <Outer>
+                            <span onClick={()=> window.open(nft.previewLink, "_self")}>
+                                <img onLoad={this.onImgLoad} src={nft.previewImg} className="lazy nft__item_preview" alt=""/>
+                            </span>
+                        </Outer>
                         </div>
-                        <div className="nft__item_action">
-                            <span onClick={()=>addToken(nft.index, nft.deadline, nft.authorLink, nft.previewLink, nft.authorImg, nft.title, nft.price, nft.quantity, nft.likes)}>Buy more</span>
-                        </div>
-                        <div className="nft__item_like">
-                            <i className="fa fa-heart"></i><span>{nft.likes}</span>
-                        </div>                            
-                    </div> 
-                </div>
-            </div>  
-        ))}
-        
-    </div>              
+                        <div className="nft__item_info">
+                            <span onClick={()=> window.open(nft.nftLink, "_self")}>
+                                <h4>{nft.title}</h4>
+                            </span>
+                            <div className="nft__item_price">
+                                {nft.price} Matic<span></span>
+                            </div>
+                            <div className="nft__item_price">
+                                On sale: <span id="onsale">{nft.quantity}</span>
+                            </div>
+                            <div className="nft__item_action">
+                                <span onClick={()=>addToken(nft.index, nft.deadline, nft.authorLink, nft.previewLink, nft.authorImg, nft.title, nft.price, nft.quantity, nft.likes)}>Buy more</span>
+                            </div>
+                            <div className="nft__item_like">
+                                <i className="fa fa-heart"></i><span>{nft.likes}</span>
+                            </div>                            
+                        </div> 
+                    </div>
+                </div>  
+            ))}
+            
+        </div>       
     );
 }
 }

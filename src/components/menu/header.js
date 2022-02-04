@@ -197,20 +197,7 @@ const Header= function() {
                           >
                           Element
                         </div>
-                        {openMenu3 && (
-                          <div className='item-dropdown'>
-                            <div className="dropdown" onClick={closeMenu3}>
-                              <NavLink to="/elegantIcons" onClick={() => btn_icon(!showmenu)}>Elegant Icon</NavLink>
-                              <NavLink to="/etlineIcons" onClick={() => btn_icon(!showmenu)}>Etline Icon</NavLink>
-                              <NavLink to="/fontAwesomeIcons" onClick={() => btn_icon(!showmenu)}>Font Awesome Icon</NavLink>
-                              <NavLink to="/accordion" onClick={() => btn_icon(!showmenu)}>Accordion</NavLink>
-                              <NavLink to="/alerts" onClick={() => btn_icon(!showmenu)}>Alerts</NavLink>
-                              <NavLink to="/price" onClick={() => btn_icon(!showmenu)}>Pricing Table</NavLink>
-                              <NavLink to="/progressbar" onClick={() => btn_icon(!showmenu)}>Progress bar</NavLink>
-                              <NavLink to="/tabs" onClick={() => btn_icon(!showmenu)}>Tabs</NavLink>
-                            </div>
-                          </div>
-                        )}
+                       
                       </div>
                     </div>
                   </div>
@@ -294,14 +281,7 @@ const Header= function() {
                             {openMenu3 && (
                             <div className='item-dropdown'>
                               <div className="dropdown" onClick={closeMenu3}>
-                              <NavLink to="/elegantIcons">Elegant Icon</NavLink>
-                              <NavLink to="/etlineIcons">Etline Icon</NavLink>
-                              <NavLink to="/fontAwesomeIcons">Font Awesome Icon</NavLink>
-                              <NavLink to="/accordion">Accordion</NavLink>
-                              <NavLink to="/alerts">Alerts</NavLink>
-                              <NavLink to="/price">Pricing Table</NavLink>
-                              <NavLink to="/progressbar">Progess Bar</NavLink>
-                              <NavLink to="/tabs">Tabs</NavLink>
+                              
                               </div>
                             </div>
                           )}
