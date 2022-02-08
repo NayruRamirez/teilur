@@ -38,7 +38,7 @@ const slidermain= () => (
               </Reveal>
               <Reveal className='onStep' keyframes={fadeInUp} delay={600} duration={600} triggerOnce>
               <p className=" lead">
-              Finance training in technology and get a return when talent gets hired. Teilur leverages the blockchain for social progress.
+              Invest in the development of tech talent through NFTs. Make a profit when talent gets hired. Teilur leverages the blockchain for social progress.
               </p>
               </Reveal>
               <div className="spacer-10"></div>
