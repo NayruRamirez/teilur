@@ -70,8 +70,7 @@ const footer= () => (
                             <div className="de-flex">
                                 <div className="de-flex-col">
                                     <span onClick={()=> window.open("", "_self")}>
-                                        <img alt="" className="f-logo d-1" src="./img/logo.png" />
-                                        <img alt="" className="f-logo d-3" src="./img/logo-2-light.png" />
+                                        Teilur
                                         <span className="copy">&copy; Copyright 2021 - Teilur Inc</span>
                                     </span>
                                 </div>

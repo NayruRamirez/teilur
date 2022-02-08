@@ -18,25 +18,12 @@ const home= () => (
         <FeatureBox/>
       </section>
 
-      <section className='container no-bottom'>
-        <div className='row'>
-          <div className='col-lg-12'>
-            <div className='text-center'>
-              <h2>Hot Collections</h2>
-              <div className="small-border"></div>
-            </div>
-          </div>
-          <div className='col-lg-12'>
-            <CarouselCollection/>
-          </div>
-        </div>
-      </section>
 
       <section className='container no-bottom'>
         <div className='row'>
           <div className='col-lg-12'>
             <div className='text-center'>
-              <h2>New Items</h2>
+              <h2>Best Pools</h2>
               <div className="small-border"></div>
             </div>
           </div>
@@ -46,20 +33,7 @@ const home= () => (
         </div>
       </section>
 
-      <section className='container no-bottom'>
-        <div className='row'>
-          <div className='col-lg-12'>
-            <div className='text-center'>
-              <h2>Top Sellers</h2>
-              <div className="small-border"></div>
-            </div>
-          </div>
-          <div className='col-lg-12'>
-            <AuthorList/>
-          </div>
-        </div>
-      </section>
-
+     
       <section className='container'>
         <div className='row'>
           <div className='col-lg-12'>
