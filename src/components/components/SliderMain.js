@@ -34,11 +34,11 @@ const slidermain= () => (
               </Reveal>
               <div className="spacer-10"></div>
               <Reveal className='onStep' keyframes={fadeInUp} delay={300} duration={600} triggerOnce>
-              <h1 className="">Latin America's talent potential unlocked</h1>
+              <h1 className="">The world's first network of ESG NFT'S</h1>
               </Reveal>
               <Reveal className='onStep' keyframes={fadeInUp} delay={600} duration={600} triggerOnce>
               <p className=" lead">
-              Teilur is the world's first talent development network connecting U.S. tech startups, remote developers from Latin America, and ESG investors.
+              Finance training in technology and get a return when talent gets hired. Teilur leverages the blockchain for social progress.
               </p>
               </Reveal>
               <div className="spacer-10"></div>

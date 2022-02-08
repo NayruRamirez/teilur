@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import Clock from "./Clock";
+import Cart from './Cart'
 
 const Outer = styled.div`
   display: flex;
@@ -10,64 +11,61 @@ const Outer = styled.div`
   overflow: hidden;
   border-radius: 8px;
 `;
+let tokensPrice = 0
+let allTokensAdded = []
 
+const addToken = function(index, deadline, authorLink, previewLink, authorImg, title,price,quantity, likes){
+    
+    const tokenAdded = {
+        index : index,
+        deadline : deadline,
+        authorLink : authorLink,
+        previewLink : previewLink,
+        authorImg : authorImg,
+        title : title,
+        price : price,
+        quantity : quantity,
+        likes : likes
+    }
+    tokensPrice += tokenAdded.price
+    allTokensAdded.push(tokenAdded)
+    let cartTokens = document.getElementById('tokensQuantity')
+    let totalTokensPrice = document.getElementById('totalValue')
+    console.log(allTokensAdded)
+    return(
+        cartTokens.textContent = `Tokens Quantity: ${allTokensAdded.length}`,
+        totalTokensPrice.textContent = `Total amount: ${tokensPrice}`
+    )      
+  
+}
 export default class Responsive extends Component {
-    dummyData = [{
-        index : 0,
-        deadline:"February, 10, 2022",
-        authorLink: "#",
-        previewLink: "#",
-        nftLink: "#",
-        quantityLink: "#",
-        authorImg: "./img/author/author-9.jpg",
-        previewImg: "./img/items/anim-7.webp",
-        title: "UX Omnia",
-        price: "3.08 Matic",
-        quantity: 100,
-        likes: 50
-    },
-    {
-        index : 1,
-        deadline:"December, 30, 2021",
-        authorLink: "#",
-        previewLink: "#",
-        nftLink: "#",
-        quantityLink: "#",
-        authorImg: "./img/author/author-9.jpg",
-        previewImg: "./img/items/anim-3.webp",
-        title: "UI Spiro",
-        price: "5.3 Matic",
-        quantity: 100,
-        likes: 50
-    },
-    {
-        index : 3,
-        deadline:"February, 10, 2022",
-        authorLink: "#",
-        previewLink: "#",
-        nftLink: "#",
-        quantityLink: "#",
-        authorImg: "./img/author/author-9.jpg",
-        previewImg: "./img/items/anim-8.webp",
-        title: "Next Grafico",
-        price: "3.45 Matic",
-        quantity: 100,
-        likes: 97
-    },
-    {
-        index : 4,
-        deadline:"February, 1, 2022",
-        authorLink: "#",
-        previewLink: "#",
-        nftLink: "#",
-        quantityLink: "#",
-        authorImg: "./img/author/author-9.jpg",
-        previewImg: "./img/items/anim-2.webp",
-        title: "SQL Alpha",
-        price: "3.08 Matic",
-        quantity: 100,
-        likes: 50
-    }]
+  
+ dummyData = [{
+    deadline:"December, 30, 2021",
+    authorLink: "#",
+    nftLink: "#",
+    bidLink: "#",
+    authorImg: "./img/author/author-1.jpg",
+    previewImg: "./img/items/static-1.jpg",
+    title: "UX Omnia",
+    price: 3,
+    bid: "1/20",
+    likes: 50
+},
+
+
+{
+    deadline:"January, 1, 2022",
+    authorLink: "#",
+    nftLink: "#",
+    bidLink: "#",
+    authorImg: "./img/author/author-12.jpg",
+    previewImg: "./img/items/static-4.jpg",
+    title: "SQL Alpha",
+    price: 4,
+    bid: "1/20",
+    likes: 50
+}]
 
   constructor(props) {
     super(props);
@@ -90,46 +88,38 @@ export default class Responsive extends Component {
  render() {
   return (
     <div className='row'>
-        {this.state.nfts.map( (nft, index) => (
-            <div key={index} className="d-item col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div className="nft__item">
-                    { nft.deadline &&
-                        <div className="de_countdown">
-                            <Clock deadline={nft.deadline} />
-                        </div>
-                    }
-                    <div className="author_list_pp">
-                        <span onClick={()=> window.open(nft.authorLink, "_self")}>                                    
-                            <img className="lazy" src={nft.authorImg} alt=""/>
-                            <i className="fa fa-check"></i>
-                        </span>
-                    </div>
-                    <div className="nft__item_wrap" style={{height: `${this.state.height}px`}}>
-                      <Outer>
-                        <span>
-                            <img onLoad={this.onImgLoad} src={nft.previewImg} className="lazy nft__item_preview" alt=""/>
-                        </span>
-                      </Outer>
-                    </div>
-                    <div className="nft__item_info">
-                        <span onClick={()=> window.open(nft.nftLink, "_self")}>
-                            <h4>{nft.title}</h4>
-                        </span>
-                        <div className="nft__item_price">
-                            {nft.price}<span>{nft.bid}</span>
-                        </div>
-                        <div className="nft__item_action">
-                            <span>Buy</span>
-                        </div>
-                        <div className="nft__item_like">
-                            <i className="fa fa-heart"></i><span>{nft.likes}</span>
-                        </div>                            
-                    </div> 
+    {this.state.nfts.map( (nft, index) => (
+        <div key={index} className="d-item col-lg-4 col-md-6 col-sm-6 col-xs-12 mb-4">
+            <div className="nft__item m-0">
+                
+                <div className="author_list_pp">
+                   
                 </div>
-            </div>  
-        ))}
+                <div className="nft__item_wrap" style={{height: `${this.state.height}px`}}>
+                    <span>
+                        <img onLoad={this.onImgLoad} src={nft.previewImg} className="lazy nft__item_preview" alt=""/>
+                    </span>
+                </div>
+                <div className="nft__item_info">
+                    <span onClick={()=> window.open(nft.nftLink, "_self")}>
+                        <h4>{nft.title}</h4>
+                    </span>
+                    <div className="nft__item_price">
+                        {nft.price}<span>Matic</span>
+                    </div>
+                    <div className="nft__item_action">
+                        <span onClick={()=>addToken(nft.index, nft.deadline, nft.authorLink, nft.previewLink, nft.authorImg, nft.title, nft.price, nft.quantity, nft.likes)}>Add to cart</span>
+                    </div>
+                    <div className="nft__item_like">
+                        <i className="fa fa-check"></i><span></span>
+                    </div>                            
+                </div> 
+            </div>
+            
+        </div>  
         
-    </div>              
+    ))}
+</div> 
     );
 }
 }

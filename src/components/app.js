@@ -62,8 +62,12 @@ const PosedRouter = ({ children }) => (
   </Location>
 );
 
+
+
 const app= () => (
   <div className="wraper">
+    
+  
   <GlobalStyles />
     <Header/>
       <PosedRouter>
@@ -75,7 +79,9 @@ const app= () => (
         <Home2 path="/home2" />
         <Home3 path="/home3" />
         <Explore path="/explore" />
-        <Explore2 path="/explore2" />
+        <Explore2 path="/explore2">
+          <Redirect to="/colection"/>
+        </Explore2>
         <Rangking path="/rangking" />
         <Auction path="/Auction" />
         <Helpcenter path="/helpcenter" />

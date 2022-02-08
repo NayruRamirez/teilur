@@ -125,22 +125,7 @@ const Header= function() {
                 <Breakpoint l down>
                   {showmenu && 
                   <div className='menu'>
-                    <div className='navbar-item'>
-                      <div ref={ref}>
-                        <div className="dropdown-custom dropdown-toggle btn" 
-                          onClick={handleBtnClick}
-                          >
-                          Home
-                        </div>
-                        {openMenu && (
-                          <div className='item-dropdown'>
-                            <div className="dropdown" onClick={closeMenu}>
-                              
-                            </div>
-                          </div>
-                        )}
-                      </div>
-                    </div>
+                    
                     <div className='navbar-item'>
                       <div ref={ref1}>
                         <div className="dropdown-custom dropdown-toggle btn" 
@@ -185,42 +170,13 @@ const Header= function() {
                         )}
                       </div>
                     </div>
-                    <div className='navbar-item'>
-                      <NavLink to="/activity" onClick={() => btn_icon(!showmenu)}>
-                        Activity
-                      </NavLink>
-                    </div>
-                    <div className='navbar-item'>
-                      <div ref={ref3}>
-                        <div className="dropdown-custom dropdown-toggle btn" 
-                          onClick={handleBtnClick3}
-                          >
-                          Element
-                        </div>
-                       
-                      </div>
-                    </div>
                   </div>
                   }
                 </Breakpoint>
 
                 <Breakpoint xl>
                   <div className='menu'>
-                    <div className='navbar-item'>
-                        <div ref={ref}>
-                          <div className="dropdown-custom dropdown-toggle btn" 
-                             onMouseEnter={handleBtnClick} onMouseLeave={closeMenu}>
-                            Home
-                            <span className='lines'></span>
-                            {openMenu && (
-                            <div className='item-dropdown'>
-                              
-                            </div>
-                          )}
-                          </div>
-                          
-                        </div>
-                    </div>
+                    
                     <div className='navbar-item'>
                       <div ref={ref1}>
                           <div className="dropdown-custom dropdown-toggle btn" 
@@ -266,27 +222,12 @@ const Header= function() {
                           </div>
                         </div>
                     </div>
+                    
                     <div className='navbar-item'>
                       <NavLink to="/activity">
                       Activity
                       <span className='lines'></span>
                       </NavLink>
-                    </div>
-                    <div className='navbar-item'>
-                      <div ref={ref3}>
-                          <div className="dropdown-custom dropdown-toggle btn" 
-                             onMouseEnter={handleBtnClick3} onMouseLeave={closeMenu3}>
-                            Elements
-                            <span className='lines'></span>
-                            {openMenu3 && (
-                            <div className='item-dropdown'>
-                              <div className="dropdown" onClick={closeMenu3}>
-                              
-                              </div>
-                            </div>
-                          )}
-                          </div>
-                        </div>
                     </div>
                   </div>
                 </Breakpoint>
