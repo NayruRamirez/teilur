@@ -139,9 +139,9 @@ const Header= function() {
                               <NavLink to="/explore2" onClick={() => btn_icon(!showmenu)}>Pools</NavLink>
                               <NavLink to="/rangking" onClick={() => btn_icon(!showmenu)}>Ranking</NavLink>
                               <NavLink to="/colection" onClick={() => btn_icon(!showmenu)}>Your Nft's</NavLink>
-                              <NavLink to="/ItemDetail" onClick={() => btn_icon(!showmenu)}>Items Details</NavLink>
+                          
                               <NavLink to="/Auction" onClick={() => btn_icon(!showmenu)}>Live Auction</NavLink>
-                              <NavLink to="/helpcenter" onClick={() => btn_icon(!showmenu)}>Help Center</NavLink>
+                              
                             </div>
                           </div>
                         )}
@@ -162,7 +162,6 @@ const Header= function() {
                               <NavLink to="/news" onClick={() => btn_icon(!showmenu)}>News</NavLink>
                               <NavLink to="/works" onClick={() => btn_icon(!showmenu)}>Gallery</NavLink>
                               <NavLink to="/login" onClick={() => btn_icon(!showmenu)}>login</NavLink>
-                              <NavLink to="/loginTwo" onClick={() => btn_icon(!showmenu)}>login 2</NavLink>
                               <NavLink to="/register" onClick={() => btn_icon(!showmenu)}>Register</NavLink>
                               <NavLink to="/contact" onClick={() => btn_icon(!showmenu)}>Contact Us</NavLink>
                             </div>
@@ -191,7 +190,7 @@ const Header= function() {
                               <NavLink to="/colection">Your Nft's</NavLink>
                               <NavLink to="/ItemDetail">Items Details</NavLink>
                               <NavLink to="/Auction">Live Auction</NavLink>
-                              <NavLink to="/helpcenter">Help Center</NavLink>
+                           
                               </div>
                             </div>
                           )}

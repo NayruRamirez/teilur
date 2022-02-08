@@ -27,30 +27,30 @@ const useEffect = function(){
 const Account = function(){
     return(
        <div>
-           <section className='container d_coll no-top no-bottom'>
-    <div className='row'>
-      <div className="col-md-12">
-         <div className="d_profile">
-                  <div className="profile_avatar">
-                      <div className="d_profile_img">
-                          <img src="./img/author/author-1.jpg" alt="" onLoad={(useEffect)}/>
-                          <i className="fa fa-check"></i>
-                      </div>
-                      
-                      <div className="profile_name">
-                          <h4>
-                              Nayru                                                
-                              <div className="clearfix"></div>
-                              <p id="wallet" className="profile_wallet"></p>
-                              <p id="balance" className="profile_wallet"></p>
-                          </h4>
-                      </div>
-                  </div>
+         <section className='container d_coll no-top no-bottom'>
+            <div className='row'>
+              <div className="col-md-12">
+                <div className="d_profile">
+                          <div className="profile_avatar">
+                              <div className="d_profile_img">
+                                  <img src="./img/author/author-2.jpg" alt="" onLoad={(useEffect)}/>
+                                  <i className="fa fa-check"></i>
+                              </div>
+                              
+                              <div className="profile_name">
+                                  <h4>
+                                      Your account                                              
+                                      <div className="clearfix"></div>
+                                      <p id="wallet" className="profile_wallet"></p>
+                                      <p id="balance" className="profile_wallet"></p>
+                                  </h4>
+                              </div>
+                          </div>
 
-          </div>
-      </div>
-    </div>
-  </section>
+                  </div>
+              </div>
+            </div>
+          </section>
        </div>
     )
 };

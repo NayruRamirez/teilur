@@ -109,7 +109,7 @@ export default class Responsive extends Component {
                     </Outer>
                   </div>
                   <div className="nft__item_info">
-                      <span onClick={()=> window.open("/#", "_self")}>
+                      <span onClick={()=> window.open("/ItemDetail", "_self")}>
                           <h4>UX Omnia</h4>
                       </span>
                       <div className="nft__item_price">
