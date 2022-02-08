@@ -24,18 +24,9 @@ const GlobalStyles = createGlobalStyle`
 
 const Colection= function() {
 const [openMenu, setOpenMenu] = React.useState(true);
-const [openMenu1, setOpenMenu1] = React.useState(false);
 const handleBtnClick = (): void => {
   setOpenMenu(!openMenu);
-  setOpenMenu1(false);
   document.getElementById("Mainbtn").classList.add("active");
-  document.getElementById("Mainbtn1").classList.remove("active");
-};
-const handleBtnClick1 = (): void => {
-  setOpenMenu1(!openMenu1);
-  setOpenMenu(false);
-  document.getElementById("Mainbtn1").classList.add("active");
-  document.getElementById("Mainbtn").classList.remove("active");
 };
 
 
@@ -55,22 +46,21 @@ return (
           <div className='col-lg-12'>
               <div className="items_filter">
                 <ul className="de_nav">
-                    <li id='Mainbtn' className="active"><span onClick={handleBtnClick}>On sale</span></li>
-                    <li id='Mainbtn1' className=""><span onClick={handleBtnClick1}>Owned</span></li>
+                    <li id='Mainbtn' className="active"><span onClick={handleBtnClick}>Owned</span></li>
                 </ul>
             </div>
           </div>
         </div>
       {openMenu && (  
-        <div id='zero1' className='onStep fadeIn'>
-         <ColumnZero/>
+        <div id='zero1' className='onStep fadeIn' style={{widht: `60vw`}}>
+          <div className="col-md-2"></div>
+         <div className="col-md-8">
+            <ColumnZero/>
+          </div>
+          <div className="col-md-2"></div>
         </div>
       )}
-      {openMenu1 && ( 
-        <div id='zero2' className='onStep fadeIn'>
-         <ColumnZeroTwo/>
-        </div>
-      )}
+      
       </section>
 
 

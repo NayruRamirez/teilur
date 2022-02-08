@@ -40,32 +40,67 @@ const addToken = function(index, deadline, authorLink, previewLink, authorImg, t
 }
 export default class Responsive extends Component {
   
- dummyData = [{
-    deadline:"December, 30, 2021",
-    authorLink: "#",
-    nftLink: "#",
-    bidLink: "#",
-    authorImg: "./img/author/author-1.jpg",
-    previewImg: "./img/items/static-1.jpg",
-    title: "UX Omnia",
-    price: 3,
-    bid: "1/20",
-    likes: 50
-},
-
-
-{
-    deadline:"January, 1, 2022",
-    authorLink: "#",
-    nftLink: "#",
-    bidLink: "#",
-    authorImg: "./img/author/author-12.jpg",
-    previewImg: "./img/items/static-4.jpg",
-    title: "SQL Alpha",
-    price: 4,
-    bid: "1/20",
-    likes: 50
-}]
+    dummyData = [{
+        deadline:"December, 30, 2021",
+        authorLink: "#",
+        nftLink: "#",
+        bidLink: "#",
+        authorImg: "./img/author/author-1.jpg",
+        previewImg: "./img/items/static-1.jpg",
+        title: "UX Omnia",
+        price: 3,
+        bid: "1/20",
+        likes: 50
+    },
+    
+    {
+        deadline:"",
+        authorLink: "#",
+        nftLink: "#",
+        bidLink: "#",
+        authorImg: "./img/author/author-11.jpg",
+        previewImg: "./img/items/static-3.jpg",
+        title: "Next Graphico",
+        price: 5,
+        bid: "1/11",
+        likes: 97
+    },
+    {
+        deadline:"January, 1, 2022",
+        authorLink: "#",
+        nftLink: "#",
+        bidLink: "#",
+        authorImg: "./img/author/author-12.jpg",
+        previewImg: "./img/items/static-4.jpg",
+        title: "SQL Alpha",
+        price: 4,
+        bid: "1/20",
+        likes: 50
+    },
+    {
+        deadline:"",
+        authorLink: "#",
+        nftLink: "#",
+        bidLink: "#",
+        authorImg: "./img/author/author-7.jpg",
+        previewImg: "./img/items/static-5.jpg",
+        title: "UI Spiro",
+        price: 6,
+        bid: "1/20",
+        likes: 50
+    },
+    {
+        deadline:"",
+        authorLink: "#",
+        nftLink: "#",
+        bidLink: "#",
+        authorImg: "./img/author/author-9.jpg",
+        previewImg: "./img/items/static-6.jpg",
+        title: "Alys Python",
+        price: 5,
+        bid: "1/20",
+        likes: 50
+    }]
 
   constructor(props) {
     super(props);
@@ -92,9 +127,7 @@ export default class Responsive extends Component {
         <div key={index} className="d-item col-lg-4 col-md-6 col-sm-6 col-xs-12 mb-4">
             <div className="nft__item m-0">
                 
-                <div className="author_list_pp">
-                   
-                </div>
+                
                 <div className="nft__item_wrap" style={{height: `${this.state.height}px`}}>
                     <span>
                         <img onLoad={this.onImgLoad} src={nft.previewImg} className="lazy nft__item_preview" alt=""/>
