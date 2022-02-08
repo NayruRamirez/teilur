@@ -104,7 +104,7 @@ return (
 <div>
 <GlobalStyles/>
 
-  <section className='jumbotron breadcumb no-bg' style={{backgroundImage: `url(${'./img/background/subheader.jpg'})`}}>
+  <section className='jumbotron breadcumb no-bg' style={{backgroundImage: `url(${'./img/background/4.jpg'})`}}>
     <div className='mainbreadcumb'>
       <div className='container'>
         <div className='row m-10-hor'>
@@ -124,72 +124,44 @@ return (
     {openMenu && (  
     <ul className="activity-list">
       <li className="act_follow">
-          <img className="lazy" src="./img/author/author-1.jpg" alt=""/>
+          <img className="lazy" src="./img/items/static-3.jpg" alt=""/>
           <div className="act_list_text">
-              <h4>Monica Lucas</h4>
-              started following <span className='color'>Gayle Hicks</span>
+              <h4>Next Graphico</h4>
+              started 80%  <span className='color'>Working</span>
               <span className="act_list_date">
-                  10/07/2021, 12:40
+                  01/07/2022, 12:40
               </span>
           </div>
       </li>
       <li className="act_sale">
-          <img className="lazy" src="./img/items/thumbnail-2.jpg" alt=""/>
+          <img className="lazy" src="./img/items/static-4.jpg" alt=""/>
           <div className="act_list_text">
-              <h4>Deep Sea Phantasy</h4>
-             1 edition purchased by <span className='color'>Stacy Long</span>
+              <h4>SQL Alpha</h4>
+             1 token purchased by <span className='color'> 0x9374BASU0X...</span>
               <span className="act_list_date">
-                  10/07/2021, 12:40
+                  02/07/2022, 2:40
               </span>
           </div>
       </li>
-      <li className="act_follow">
-          <img className="lazy" src="./img/author/author-2.jpg" alt=""/>
-          <div className="act_list_text">
-              <h4>Mamie Barnett</h4>
-              started following <span className='color'>Claude Banks</span>
-              <span className="act_list_date">
-                  10/07/2021, 12:40
-              </span>
-          </div>
-      </li>
-      <li className="act_sale">
-          <img className="lazy" src="./img/items/thumbnail-4.jpg" alt=""/>
-          <div className="act_list_text">
-              <h4>Two Tigers</h4>
-             1 edition purchased by <span className='color'>Jimmy Wright</span> for 0.02 ETH 
-              <span className="act_list_date">
-                  10/07/2021, 12:40
-              </span>
-          </div>
-      </li>
-      <li className="act_like">
-          <img className="lazy" src="./img/items/thumbnail-7.jpg" alt=""/>
-          <div className="act_list_text">
-              <h4>Cute Astronout</h4>
-             liked by <span className='color'>Nicholas Daniels</span>
-              <span className="act_list_date">
-                  10/07/2021, 12:40
-              </span>
-          </div>
-      </li>
+     
+     
       <li className="act_offer">
           <img className="lazy" src="./img/items/thumbnail-5.jpg" alt=""/>
           <div className="act_list_text">
-              <h4>Purple Planet</h4>
-             <span className='color'>Franklin Greer</span> offered 0.002 ETH
+              <h4>UI Spiro </h4>
+             <span className='color'>New 100 available tokens round </span> price 7 Matic
               <span className="act_list_date">
-                  10/07/2021, 12:40
+                  Now!!!! 
               </span>
           </div>
       </li>
       <li className="act_like">
           <img className="lazy" src="./img/items/thumbnail-6.jpg" alt=""/>
           <div className="act_list_text">
-              <h4>Cute Astronout</h4>
-             liked by <span className='color'>Nicholas Daniels</span>
+              <h4>Alys Python</h4>
+             Applying percentaje <span className='color'>25%</span>
               <span className="act_list_date">
-                  10/07/2021, 12:40
+                  Applying for Python data analist
               </span>
           </div>
       </li>
