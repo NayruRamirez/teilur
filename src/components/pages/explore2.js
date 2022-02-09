@@ -1,7 +1,7 @@
 import React from 'react';
-import ColumnNewThreeCol from '../components/ColumnNewThreeCol';
 import Footer from '../components/footer';
 import { createGlobalStyle } from 'styled-components';
+import { ListGroup } from 'react-bootstrap';
 
 const GlobalStyles = createGlobalStyle`
   .navbar {
@@ -100,7 +100,7 @@ const explore= () => (
               <h4>Verticals</h4>
               <div className="de_form">
                   <div className="de_checkbox">
-                      <input id="check_cat_1" name="check_cat_1" type="checkbox" value="check_cat_1"/>
+                      <input id="check_cat_1" name="check_cat_1" type="checkbox" value="check_cat_1" />
                       <label htmlFor="check_cat_1">Blockchain</label>
                   </div>
 
@@ -148,7 +148,7 @@ const explore= () => (
           </div>
 
           <div className="col-md-9">
-              <div className='row'>
+            <div className='row'>
                 {dummyData.map( (nft, index) => (
                     <div key={index} className="d-item col-lg-4 col-md-6 col-sm-6 col-xs-12 mb-4">
                         <div className="nft__item m-0" style={{height : `28rem`}}>
@@ -173,19 +173,14 @@ const explore= () => (
                                     <span >Details</span>
                                 </div>
                                 <div className="nft__item_like">
-                                   <i className="fa icon_circle-empty"></i><span>{nft.likes}</span>
+                                <i className="fa icon_circle-empty"></i><span>{nft.state}</span>
                                 </div>                   
                             </div> 
                         </div>
                     </div>  
                 ))}
-                { dummyData.length !== dummyData.length &&
-                    <div className='col-lg-12'>
-                        <div className="spacer-single"></div>
-                        <span onClick={() => this.loadMore()} className="btn-main lead m-auto">Load More</span>
-                    </div>
-                }
-            </div>              
+            
+           </div>   
           </div>
            
         </div>

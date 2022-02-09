@@ -104,7 +104,7 @@ export default class Responsive extends Component {
                   <div className="nft__item_wrap" style={{height: `${this.state.height}px`}}>
                     <Outer>
                       <span>
-                          <img src="./img/items/static-1.jpg" className="lazy nft__item_preview" onLoad={this.onImgLoad} alt=""/>
+                          <img src="./img/items/static-10.jpg" className="lazy nft__item_preview" onLoad={this.onImgLoad} alt=""/>
                       </span>
                     </Outer>
                   </div>
@@ -113,13 +113,13 @@ export default class Responsive extends Component {
                           <h4>UX Omnia</h4>
                       </span>
                       <div className="nft__item_price">
-                          3 Matic<span>100/100 Available</span>
+                          $20 Price per unit
                       </div>
                       <div className="nft__item_action">
-                          <span onClick={()=> window.open("/uxomnia", "_self")}>Buy</span>
+                          <span onClick={()=> window.open("/uxomnia", "_self")}>Details</span>
                       </div>
                       <div className="nft__item_like">
-                          <i className="fa fa-check"></i><span></span>
+                          <i className="fa  icon_circle-empty"></i><span></span>
                       </div>                            
                   </div> 
               </div>
@@ -133,7 +133,7 @@ export default class Responsive extends Component {
                   <div className="nft__item_wrap" style={{height: `${this.state.height}px`}}>
                     <Outer>
                       <span>
-                          <img src="./img/items/static-3.jpg" className="lazy nft__item_preview" onLoad={this.onImgLoad} alt=""/>
+                          <img src="./img/items/static-9.jpg" className="lazy nft__item_preview" onLoad={this.onImgLoad} alt=""/>
                       </span>
                     </Outer>
                   </div>
@@ -142,14 +142,14 @@ export default class Responsive extends Component {
                           <h4>Next Graphico</h4>
                       </span>
                       <div className="nft__item_price">
-                          5 Matic<span>100/100 Available</span>
+                          $100 Price per unit
                       </div>
                       <div className="nft__item_action">
-                          <span onClick={()=> window.open("/nextgraphico", "_self")}>Buy</span>
+                          <span onClick={()=> window.open("/nextgraphico", "_self")}>Details</span>
                       </div>
                       <div className="nft__item_like">
-                          <i className="fa fa-check"></i><span></span>
-                      </div>                            
+                          <i className="fa  icon_circle-empty"></i><span></span>
+                      </div>                        
                   </div> 
               </div>
             </div>
@@ -171,13 +171,13 @@ export default class Responsive extends Component {
                           <h4>SQL Alpha</h4>
                       </span>
                       <div className="nft__item_price">
-                          4 Matic<span>100/100 Available</span>
+                          $40 Price per unit
                       </div>
                       <div className="nft__item_action">
-                          <span onClick={()=> window.open("/sqlalpha", "_self")}>Buy</span>
+                          <span onClick={()=> window.open("/sqlalpha", "_self")}>Details</span>
                       </div>
                       <div className="nft__item_like">
-                          <i className="fa fa-check"></i><span></span>
+                          <i className="fa  icon_circle-empty"></i><span></span>
                       </div>                            
                   </div> 
               </div>
@@ -191,7 +191,7 @@ export default class Responsive extends Component {
                   <div className="nft__item_wrap" style={{height: `${this.state.height}px`}}>
                     <Outer>
                       <span>
-                          <img src="./img/items/static-6.jpg" className="lazy nft__item_preview" onLoad={this.onImgLoad} alt=""/>
+                          <img src="./img/items/static-12.jpg" className="lazy nft__item_preview" onLoad={this.onImgLoad} alt=""/>
                       </span>
                     </Outer>
                   </div>
@@ -200,14 +200,14 @@ export default class Responsive extends Component {
                           <h4>Alys Python</h4>
                       </span>
                       <div className="nft__item_price">
-                          5 Matic<span>100/100 Available</span>
+                          $20 Price per unit
                       </div>
                       <div className="nft__item_action">
-                          <span onClick={()=> window.open("/alyspython", "_self")}>Buy</span>
+                          <span onClick={()=> window.open("/alyspython", "_self")}>Details</span>
                       </div>
                       <div className="nft__item_like">
-                          <i className="fa fa-check"></i><span></span>
-                      </div>                            
+                          <i className="fa  icon_circle-empty"></i><span></span>
+                      </div>                           
                   </div> 
               </div>
             </div>
@@ -229,14 +229,14 @@ export default class Responsive extends Component {
                           <h4>UI Spiro</h4>
                       </span>
                       <div className="nft__item_price">
-                          6 Matic<span>100/100 Available</span>
+                          $40 Price per unit
                       </div>
                       <div className="nft__item_action">
-                          <span onClick={()=> window.open("/uispiro", "_self")}>Buy</span>
+                          <span onClick={()=> window.open("/uispiro", "_self")}>Details</span>
                       </div>
                       <div className="nft__item_like">
-                          <i className="fa fa-check"></i><span></span>
-                      </div>                            
+                          <i className="fa  icon_circle-empty"></i><span></span>
+                      </div>                          
                   </div> 
               </div>
             </div>

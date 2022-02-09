@@ -51,7 +51,7 @@ return (
     <div className='row mt-md-5 pt-md-4'>
 
     <div className="col-md-6 text-center">
-                            <img src="./img/items/static-4.jpg" className="img-fluid img-rounded mb-sm-30" alt=""/>
+                            <img src="./img/items/static-12.jpg" className="img-fluid img-rounded mb-sm-30" alt=""/>
                         </div>
                         <div className="col-md-6">
                             <div className="item_info">
