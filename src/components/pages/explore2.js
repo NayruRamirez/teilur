@@ -164,9 +164,7 @@ const explore= () => (
                                 <div className="nft__item_action">
                                     <span >Details</span>
                                 </div>
-                                <div className="nft__item_like">
-                                    <i className="fa fa-check"></i><span></span>
-                                </div>                            
+                                                           
                             </div> 
                         </div>
                     </div>  
