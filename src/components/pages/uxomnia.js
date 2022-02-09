@@ -61,22 +61,21 @@ return (
                                 </div>
                                 <h2>UX Omnia</h2>
                                 <div className="item_info_counts">
-                                    <div className="item_info_type"><i className="fa fa-image"></i>Art</div>
-                                    <div className="item_info_views"><i className="fa fa-eye"></i>250</div>
-                                    <div className="item_info_like"><i className="fa fa-heart"></i>18</div>
+                                    <div className="item_info_type"><i className="fa fa-behance"></i></div>
+                                    <div className="item_info_views"><i className="fa fa-css3"></i></div>
+                                    <div className="item_info_like"><i className="fa fa-html5"></i></div>
                                 </div>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                <p> The UX designer role is to make a product or service usable, enjoyable, and accessible. 
+                                    While many companies design user experiences, the term is most often associated 
+                                    with digital design for websites and apps.</p>
 
-                                <h6>Creator</h6>
+                                <h6></h6>
                                 <div className="item_author">                                    
                                     <div className="author_list_pp">
-                                        <span>
-                                            <img className="lazy" src="./img/author/author-5.jpg" alt=""/>
-                                            <i className="fa fa-check"></i>
-                                        </span>
+                                        
                                     </div>                                    
                                     <div className="author_list_info">
-                                        <span>Monica Lucas</span>
+                                       
                                     </div>
                                 </div>
 
@@ -167,9 +166,9 @@ return (
                                     
                                 </div>
                                 <div className="de_tab_content">
-                                <ul className="de_nav">
-                                    <li id='Mainbtn2' className="active"><span>Buy</span></li>
-                                    <li id='Mainbtn3' className=''><span>Place a bid</span></li>
+                                <ul className="de_nav" style={{display : `flex`, flexDirection : `row`, float : `rigth`}}>
+                                    <button id='' className='btn-main'><span>Buy</span></button>&nbsp; &nbsp; &nbsp;
+                                    <button id='' className='btn-main' style={{background : `#4a76cc75`}}><span>Place a bid</span></button>
                                 </ul>
                                     
                                 </div>

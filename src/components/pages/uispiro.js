@@ -65,8 +65,12 @@ return (
                                     <div className="item_info_views"><i className="fa fa-eye"></i>250</div>
                                     <div className="item_info_like"><i className="fa fa-heart"></i>18</div>
                                 </div>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
+                                <p>A UI Designer is a technical role that is responsible for presenting a 
+                                    product's development in a way that is attractive and convenient for users.
+                                     A UI designer is responsible for creating interactive programs that enhance 
+                                     a customer's experience with a brand and facilitate an enjoyable experience 
+                                     on the business's website. UI designers also need to have a working understanding 
+                                     of coding and transfer the brand's strength through the interface of a product.</p>
                                 <h6>Creator</h6>
                                 <div className="item_author">                                    
                                     <div className="author_list_pp">

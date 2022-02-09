@@ -2645,6 +2645,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.2) 5%, transparent);
 	-webkit-transform: rotateZ(60deg) translate(-1em, 5.5em);
 	transform: rotateZ(60deg) translate(-1em, 5.5em);
+  
 }
 @-webkit-keyframes sheen {
 	0% {

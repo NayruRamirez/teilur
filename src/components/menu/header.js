@@ -233,7 +233,7 @@ const Header= function() {
               </BreakpointProvider>
 
               <div className='mainside'>
-                <NavLink to="/colection" className="btn-main" onClick={connectWallet}>Connect Wallet</NavLink>
+                <NavLink to="/wallet" className="btn-main" >Connect Wallet</NavLink>
               </div>
                   
       </div>
