@@ -25,10 +25,9 @@ const NavLink = props => (
   />
 );
 
-const connectWallet = function(){
-
+const connect = function() {
   if (window.ethereum) {
-
+  
     // (async () => {
     //   const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' })
     //   console.log(`Accounts: ${accounts}`)
@@ -38,13 +37,16 @@ const connectWallet = function(){
       const web3 = new Web3(window.ethereum);
       const accounts = await web3.eth.requestAccounts();
       console.log(`Accounts: ${accounts[0]}`);
+      const accountbtn = document.getElementById('mainside')
+      console.log(accountbtn)
 
     })()
+  }else{
+    
   }
 }
 
 const Header= function() {
-
     const [openMenu, setOpenMenu] = React.useState(false);
     const [openMenu1, setOpenMenu1] = React.useState(false);
     const [openMenu2, setOpenMenu2] = React.useState(false);
@@ -108,6 +110,7 @@ const Header= function() {
         window.removeEventListener("scroll", scrollCallBack);
       };
     }, []);
+    connect()
     return (
     <header id="myHeader" className='navbar white'>
      <div className='container'>
