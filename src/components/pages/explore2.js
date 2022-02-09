@@ -8,92 +8,72 @@ const GlobalStyles = createGlobalStyle`
     border-bottom: solid 1px rgba(255, 255, 255, .1) !important;
   }
 `;
-let tokensPrice = 0
-const allTokensAdded = []
 
-const addToken = function(index, deadline, authorLink, previewLink, authorImg, title,price,quantity, likes){
-    
-    const tokenAdded = {
-        index : index,
-        deadline : deadline,
-        authorLink : authorLink,
-        previewLink : previewLink,
-        authorImg : authorImg,
-        title : title,
-        price : price,
-        quantity : quantity,
-        likes : likes
-    }
-    tokensPrice += tokenAdded.price
-    allTokensAdded.push(tokenAdded)
-    let cartTokens = document.getElementById('tokensQuantity')
-    let totalTokensPrice = document.getElementById('totalValue')
-    return(
-        cartTokens.textContent = `Tokens Quantity: ${allTokensAdded.length}`,
-        totalTokensPrice.textContent = `Total amount: ${tokensPrice}`
-    )      
-  
-}
 const  dummyData = [{
   deadline:"December, 30, 2021",
   authorLink: "#",
   nftLink: "#",
-  bidLink: "#",
+  quantityLink: "#",
   authorImg: "./img/author/author-1.jpg",
   previewImg: "./img/items/static-10.jpg",
   title: "UX Omnia",
-  price: 3,
-  bid: "1/20",
-  likes: 50
+  code : "UXO001",
+  price: 30,
+  quantity: 200,
+  percentaje: 100
 },
 
 {
   deadline:"",
   authorLink: "#",
   nftLink: "#",
-  bidLink: "#",
+  quantityLink: "#",
   authorImg: "./img/author/author-11.jpg",
   previewImg: "./img/items/static-9.jpg",
   title: "Next Graphico",
-  price: 5,
-  bid: "1/11",
-  likes: 97
+  code : "NXG001",
+  price: 100,
+  quantity: 200,
+  percentaje: 100
 },
 {
   deadline:"January, 1, 2022",
   authorLink: "#",
   nftLink: "#",
-  bidLink: "#",
+  quantityLink: "#",
   authorImg: "./img/author/author-12.jpg",
   previewImg: "./img/items/static-4.jpg",
   title: "SQL Alpha",
-  price: 4,
-  bid: "1/20",
-  likes: 50
+  code : "SQL001",
+  price: 40,
+  quantity: 200,
+  percentaje: 100
 },
 {
   deadline:"",
   authorLink: "#",
   nftLink: "#",
-  bidLink: "#",
+  quantityLink: "#",
   authorImg: "./img/author/author-7.jpg",
   previewImg: "./img/items/static-12.jpg",
   title: "UI Spiro",
-  price: 6,
-  bid: "1/20",
-  likes: 50
+  code : "UIS001",
+  price: 20,
+  quantity: 200,
+  percentaje: 100
 },
 {
   deadline:"",
   authorLink: "#",
   nftLink: "#",
-  bidLink: "#",
+  quantityLink: "#",
   authorImg: "./img/author/author-9.jpg",
   previewImg: "./img/items/static-7.jpg",
   title: "Alys Python",
-  price: 5,
-  bid: "1/20",
-  likes: 50
+  code : "ALP001",
+  price: 40,
+  quantity: 200,
+  percentaje: 100
 }]
 
 
@@ -173,13 +153,16 @@ const explore= () => (
                             </div>
                             <div className="nft__item_info">
                                 <span onClick={()=> window.open(nft.nftLink, "_self")}>
-                                    <h4>{nft.title}</h4>
+                                    <h4>{nft.title} <span style={{color : `grey`, float : `right`}}>{nft.code}</span></h4>
                                 </span>
                                 <div className="nft__item_price">
-                                    {nft.price}<span>Matic</span>
+                                    ${nft.price}<span> per unit</span>
+                                </div>
+                                <div className="nft__item_price">
+                                    {nft.quantity}  available <span style={{color : `grey`, float : `right`}}>({nft.percentaje})%</span>
                                 </div>
                                 <div className="nft__item_action">
-                                    <span onClick={()=>addToken(nft.index, nft.deadline, nft.authorLink, nft.previewLink, nft.authorImg, nft.title, nft.price, nft.quantity, nft.likes)}>Add to cart</span>
+                                    <span >Details</span>
                                 </div>
                                 <div className="nft__item_like">
                                     <i className="fa fa-check"></i><span></span>
