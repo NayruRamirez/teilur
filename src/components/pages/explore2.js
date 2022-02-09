@@ -20,7 +20,9 @@ const  dummyData = [{
   code : "UXO001",
   price: 30,
   quantity: 200,
-  percentaje: 100
+  percentaje: 100,
+  icon : "./img/items/design.png",
+  state : "applying"
 },
 
 {
@@ -34,7 +36,9 @@ const  dummyData = [{
   code : "NXG001",
   price: 100,
   quantity: 200,
-  percentaje: 100
+  percentaje: 100,
+  icon : "./img/items/design.png",
+  state : "studying"
 },
 {
   deadline:"January, 1, 2022",
@@ -47,7 +51,9 @@ const  dummyData = [{
   code : "SQL001",
   price: 40,
   quantity: 200,
-  percentaje: 100
+  percentaje: 100,
+  icon : "./img/items/data.png",
+  state : "working"
 },
 {
   deadline:"",
@@ -60,7 +66,9 @@ const  dummyData = [{
   code : "UIS001",
   price: 20,
   quantity: 200,
-  percentaje: 100
+  percentaje: 100,
+  icon : "./img/items/design.png",
+  state : "studying"
 },
 {
   deadline:"",
@@ -73,7 +81,9 @@ const  dummyData = [{
   code : "ALP001",
   price: 40,
   quantity: 200,
-  percentaje: 100
+  percentaje: 100,
+  icon : "./img/items/data.png",
+  state : "working"
 }]
 
 
@@ -143,8 +153,10 @@ const explore= () => (
                     <div key={index} className="d-item col-lg-4 col-md-6 col-sm-6 col-xs-12 mb-4">
                         <div className="nft__item m-0" style={{height : `28rem`}}>
                             
-                            <div className="author_list_pp">
-                              
+                            <div className="author_list_pp" style={{width : `3rem`, height : `3rem`, background : `white`}}>
+                                <span>                                    
+                                    <img className="lazy" src={nft.icon} alt=""/>
+                                </span>
                             </div>
                             <div className="nft__item_wrap">
                                 <span>
@@ -164,7 +176,9 @@ const explore= () => (
                                 <div className="nft__item_action">
                                     <span >Details</span>
                                 </div>
-                                                           
+                                <div className="nft__item_like">
+                                   <i className="fa icon_circle-empty"></i><span>{nft.likes}</span>
+                                </div>                   
                             </div> 
                         </div>
                     </div>  
