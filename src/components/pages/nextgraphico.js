@@ -25,7 +25,7 @@ const GlobalStyles = createGlobalStyle`
 
   
 
-const ItemDetails= function() {
+const NextGraphico= function() {
 
 const [openMenu, setOpenMenu] = React.useState(true);
 const [openMenu1, setOpenMenu1] = React.useState(false);
@@ -51,7 +51,7 @@ return (
     <div className='row mt-md-5 pt-md-4'>
 
     <div className="col-md-6 text-center">
-                            <img src="./img/items/big-1.jpg" className="img-fluid img-rounded mb-sm-30" alt=""/>
+                        <img src="./img/items/static-3.jpg" className="img-fluid img-rounded mb-sm-30" alt=""/>
                         </div>
                         <div className="col-md-6">
                             <div className="item_info">
@@ -59,7 +59,7 @@ return (
                                 <div className="de_countdown">
                                   <Clock deadline="December, 30, 2021" />
                                 </div>
-                                <h2>Pinky Ocean</h2>
+                                <h2>Next Graphico</h2>
                                 <div className="item_info_counts">
                                     <div className="item_info_type"><i className="fa fa-image"></i>Art</div>
                                     <div className="item_info_views"><i className="fa fa-eye"></i>250</div>
@@ -71,7 +71,7 @@ return (
                                 <div className="item_author">                                    
                                     <div className="author_list_pp">
                                         <span>
-                                            <img className="lazy" src="./img/author/author-1.jpg" alt=""/>
+                                            <img className="lazy" src="./img/author/author-5.jpg" alt=""/>
                                             <i className="fa fa-check"></i>
                                         </span>
                                     </div>                                    
@@ -187,4 +187,4 @@ return (
 </div>
 );
 }
-export default ItemDetails;
+export default NextGraphico;

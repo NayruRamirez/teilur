@@ -34,6 +34,11 @@ import Accordion from './pages/accordion';
 import Alerts from './pages/alerts';
 import Progressbar from './pages/progressbar';
 import Tabs from './pages/tabs';
+import UxOmnia from './pages/uxomnia';
+import UiSpiro from './pages/uispiro';
+import SqlAlpha from './pages/sqlalpha';
+import NextGraphico from './pages/nextgraphico';
+import AlysPython from './pages/alyspython';
 
 import { createGlobalStyle } from 'styled-components';
 
@@ -108,6 +113,12 @@ const app= () => (
         <Alerts path="/alerts" />
         <Progressbar path="/progressbar" />
         <Tabs path="/tabs" />
+
+        <UxOmnia path="/uxomnia" />
+        <UiSpiro path="/uispiro" />
+        <NextGraphico path="/nextgraphico" />
+        <AlysPython path="/alyspython" />
+        <SqlAlpha path="/sqlalpha" />
         </ScrollTop>
       </PosedRouter>
     <ScrollToTopBtn />

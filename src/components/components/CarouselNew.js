@@ -109,14 +109,14 @@ export default class Responsive extends Component {
                     </Outer>
                   </div>
                   <div className="nft__item_info">
-                      <span onClick={()=> window.open("/ItemDetail", "_self")}>
+                      <span onClick={()=> window.open("/uxomnia", "_self")}>
                           <h4>UX Omnia</h4>
                       </span>
                       <div className="nft__item_price">
                           3 Matic<span>100/100 Available</span>
                       </div>
                       <div className="nft__item_action">
-                          <span onClick={()=> window.open("/explore2", "_self")}>Buy</span>
+                          <span onClick={()=> window.open("/uxomnia", "_self")}>Buy</span>
                       </div>
                       <div className="nft__item_like">
                           <i className="fa fa-check"></i><span></span>
@@ -138,14 +138,14 @@ export default class Responsive extends Component {
                     </Outer>
                   </div>
                   <div className="nft__item_info">
-                      <span onClick={()=> window.open("/#", "_self")}>
+                      <span onClick={()=> window.open("/nextgraphico", "_self")}>
                           <h4>Next Graphico</h4>
                       </span>
                       <div className="nft__item_price">
                           5 Matic<span>100/100 Available</span>
                       </div>
                       <div className="nft__item_action">
-                          <span onClick={()=> window.open("/explore2", "_self")}>Buy</span>
+                          <span onClick={()=> window.open("/nextgraphico", "_self")}>Buy</span>
                       </div>
                       <div className="nft__item_like">
                           <i className="fa fa-check"></i><span></span>
@@ -167,14 +167,14 @@ export default class Responsive extends Component {
                     </Outer>
                   </div>
                   <div className="nft__item_info">
-                      <span onClick={()=> window.open("/#", "_self")}>
+                      <span onClick={()=> window.open("/sqlalpha", "_self")}>
                           <h4>SQL Alpha</h4>
                       </span>
                       <div className="nft__item_price">
                           4 Matic<span>100/100 Available</span>
                       </div>
                       <div className="nft__item_action">
-                          <span onClick={()=> window.open("/explore2", "_self")}>Buy</span>
+                          <span onClick={()=> window.open("/sqlalpha", "_self")}>Buy</span>
                       </div>
                       <div className="nft__item_like">
                           <i className="fa fa-check"></i><span></span>
@@ -196,14 +196,14 @@ export default class Responsive extends Component {
                     </Outer>
                   </div>
                   <div className="nft__item_info">
-                      <span onClick={()=> window.open("/#", "_self")}>
+                      <span onClick={()=> window.open("/alyspython", "_self")}>
                           <h4>Alys Python</h4>
                       </span>
                       <div className="nft__item_price">
                           5 Matic<span>100/100 Available</span>
                       </div>
                       <div className="nft__item_action">
-                          <span onClick={()=> window.open("/explore2", "_self")}>Buy</span>
+                          <span onClick={()=> window.open("/alyspython", "_self")}>Buy</span>
                       </div>
                       <div className="nft__item_like">
                           <i className="fa fa-check"></i><span></span>
@@ -220,19 +220,19 @@ export default class Responsive extends Component {
                   <div className="nft__item_wrap" style={{height: `${this.state.height}px`}}>
                     <Outer>
                       <span>
-                          <img src="./img/items/static-5.jpg" className="lazy nft__item_preview" onLoad={this.onImgLoad} alt=""/>
+                          <img src="./img/items/static-7.jpg" className="lazy nft__item_preview" onLoad={this.onImgLoad} alt=""/>
                       </span>
                     </Outer>
                   </div>
                   <div className="nft__item_info">
-                      <span onClick={()=> window.open("/#", "_self")}>
+                      <span onClick={()=> window.open("/uispiro", "_self")}>
                           <h4>UI Spiro</h4>
                       </span>
                       <div className="nft__item_price">
                           6 Matic<span>100/100 Available</span>
                       </div>
                       <div className="nft__item_action">
-                          <span onClick={()=> window.open("/explore2", "_self")}>Buy</span>
+                          <span onClick={()=> window.open("/uispiro", "_self")}>Buy</span>
                       </div>
                       <div className="nft__item_like">
                           <i className="fa fa-check"></i><span></span>
