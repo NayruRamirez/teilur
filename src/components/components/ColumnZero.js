@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import Clock from "./Clock";
-import Cart from './Cart'
+
 
 const Outer = styled.div`
   display: flex;
@@ -11,96 +10,90 @@ const Outer = styled.div`
   overflow: hidden;
   border-radius: 8px;
 `;
-let tokensPrice = 0
-let allTokensAdded = []
 
-const addToken = function(index, deadline, authorLink, previewLink, authorImg, title,price,quantity, likes){
-    
-    const tokenAdded = {
-        index : index,
-        deadline : deadline,
-        authorLink : authorLink,
-        previewLink : previewLink,
-        authorImg : authorImg,
-        title : title,
-        price : price,
-        quantity : quantity,
-        likes : likes
-    }
-    tokensPrice += tokenAdded.price
-    allTokensAdded.push(tokenAdded)
-    let cartTokens = document.getElementById('tokensQuantity')
-    let totalTokensPrice = document.getElementById('totalValue')
-    console.log(allTokensAdded)
-    return(
-        cartTokens.textContent = `Tokens Quantity: ${allTokensAdded.length}`,
-        totalTokensPrice.textContent = `Total amount: ${tokensPrice}`
-    )      
-  
-}
 export default class Responsive extends Component {
   
     dummyData = [{
         deadline:"December, 30, 2021",
         authorLink: "#",
         nftLink: "#",
-        bidLink: "#",
+        quantityLink: "#",
         authorImg: "./img/author/author-1.jpg",
-        previewImg: "./img/items/static-1.jpg",
+        previewImg: "./img/items/static-10.jpg",
         title: "UX Omnia",
-        price: 3,
-        bid: "1/20",
-        likes: 50
-    },
-    
-    {
+        code : "UXO001",
+        price: 30,
+        quantity: 200,
+        percentaje: 100,
+        icon : "./img/items/design.png",
+        state : "applying",
+        vertical : "design"
+      },
+      
+      {
         deadline:"",
         authorLink: "#",
         nftLink: "#",
-        bidLink: "#",
+        quantityLink: "#",
         authorImg: "./img/author/author-11.jpg",
-        previewImg: "./img/items/static-3.jpg",
+        previewImg: "./img/items/static-9.jpg",
         title: "Next Graphico",
-        price: 5,
-        bid: "1/11",
-        likes: 97
-    },
-    {
+        code : "NXG001",
+        price: 100,
+        quantity: 200,
+        percentaje: 100,
+        icon : "./img/items/design.png",
+        state : "studying",
+        vertical : "design"
+      },
+      {
         deadline:"January, 1, 2022",
         authorLink: "#",
         nftLink: "#",
-        bidLink: "#",
+        quantityLink: "#",
         authorImg: "./img/author/author-12.jpg",
         previewImg: "./img/items/static-4.jpg",
         title: "SQL Alpha",
-        price: 4,
-        bid: "1/20",
-        likes: 50
-    },
-    {
+        code : "SQL001",
+        price: 40,
+        quantity: 200,
+        percentaje: 100,
+        icon : "./img/items/data.png",
+        state : "working",
+        vertical : "data"
+      },
+      {
         deadline:"",
         authorLink: "#",
         nftLink: "#",
-        bidLink: "#",
+        quantityLink: "#",
         authorImg: "./img/author/author-7.jpg",
-        previewImg: "./img/items/static-5.jpg",
+        previewImg: "./img/items/static-12.jpg",
         title: "UI Spiro",
-        price: 6,
-        bid: "1/20",
-        likes: 50
-    },
-    {
+        code : "UIS001",
+        price: 20,
+        quantity: 200,
+        percentaje: 100,
+        icon : "./img/items/design.png",
+        state : "studying",
+        vertical : "design"
+      },
+      {
         deadline:"",
         authorLink: "#",
         nftLink: "#",
-        bidLink: "#",
+        quantityLink: "#",
         authorImg: "./img/author/author-9.jpg",
-        previewImg: "./img/items/static-6.jpg",
+        previewImg: "./img/items/static-7.jpg",
         title: "Alys Python",
-        price: 5,
-        bid: "1/20",
-        likes: 50
-    }]
+        code : "ALP001",
+        price: 40,
+        quantity: 200,
+        percentaje: 100,
+        icon : "./img/items/data.png",
+        state : "working",
+        vertical : "data"
+      }]
 
   constructor(props) {
     super(props);
@@ -141,7 +134,7 @@ export default class Responsive extends Component {
                         {nft.price}<span>Matic</span>
                     </div>
                     <div className="nft__item_action">
-                        <span onClick={()=>addToken(nft.index, nft.deadline, nft.authorLink, nft.previewLink, nft.authorImg, nft.title, nft.price, nft.quantity, nft.likes)}>Add to cart</span>
+                        <span>Add to cart</span>
                     </div>
                     <div className="nft__item_like">
                         <i className="fa fa-check"></i><span></span>

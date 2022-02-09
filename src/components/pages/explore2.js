@@ -153,11 +153,7 @@ const explore= () => (
                     <div key={index} className="d-item col-lg-4 col-md-6 col-sm-6 col-xs-12 mb-4">
                         <div className="nft__item m-0" style={{height : `28rem`}}>
                             
-                            <div className="author_list_pp" style={{width : `3rem`, height : `3rem`, background : `white`}}>
-                                <span>                                    
-                                    <img className="lazy" src={nft.icon} alt=""/>
-                                </span>
-                            </div>
+                            
                             <div className="nft__item_wrap">
                                 <span>
                                     <img  src={nft.previewImg} style={{height : `18rem`}}className="lazy nft__item_preview" alt=""/>

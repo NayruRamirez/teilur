@@ -1,166 +1,160 @@
-import React, { Component } from "react";
+import React, { useEffect, useState } from "react";
 
-
-let tokensPrice = 0
-const allTokensAdded = []
-
-const addToken = function(index, deadline, authorLink, previewLink, authorImg, title,price,quantity, likes){
-    
-    const tokenAdded = {
-        index : index,
-        deadline : deadline,
-        authorLink : authorLink,
-        previewLink : previewLink,
-        authorImg : authorImg,
-        title : title,
-        price : price,
-        quantity : quantity,
-        likes : likes
-    }
-    tokensPrice += tokenAdded.price
-    allTokensAdded.push(tokenAdded)
-    let cartTokens = document.getElementById('tokensQuantity')
-    let totalTokensPrice = document.getElementById('totalValue')
-    return(
-        cartTokens.textContent = `Tokens Quantity: ${allTokensAdded.length}`,
-        totalTokensPrice.textContent = `Total amount: ${tokensPrice}`
-    )      
+const  dummyData = [{
+    deadline:"December, 30, 2021",
+    authorLink: "#",
+    nftLink: "#",
+    quantityLink: "#",
+    authorImg: "./img/author/author-1.jpg",
+    previewImg: "./img/items/static-10.jpg",
+    title: "UX Omnia",
+    code : "UXO001",
+    price: 30,
+    quantity: 200,
+    percentaje: 100,
+    icon : "./img/items/design.png",
+    state : "applying",
+    vertical : "design"
+  },
   
-}
+  {
+    deadline:"",
+    authorLink: "#",
+    nftLink: "#",
+    quantityLink: "#",
+    authorImg: "./img/author/author-11.jpg",
+    previewImg: "./img/items/static-9.jpg",
+    title: "Next Graphico",
+    code : "NXG001",
+    price: 100,
+    quantity: 200,
+    percentaje: 100,
+    icon : "./img/items/design.png",
+    state : "studying",
+    vertical : "design"
+  },
+  {
+    deadline:"January, 1, 2022",
+    authorLink: "#",
+    nftLink: "#",
+    quantityLink: "#",
+    authorImg: "./img/author/author-12.jpg",
+    previewImg: "./img/items/static-4.jpg",
+    title: "SQL Alpha",
+    code : "SQL001",
+    price: 40,
+    quantity: 200,
+    percentaje: 100,
+    icon : "./img/items/data.png",
+    state : "working",
+    vertical : "data"
+  },
+  {
+    deadline:"",
+    authorLink: "#",
+    nftLink: "#",
+    quantityLink: "#",
+    authorImg: "./img/author/author-7.jpg",
+    previewImg: "./img/items/static-12.jpg",
+    title: "UI Spiro",
+    code : "UIS001",
+    price: 20,
+    quantity: 200,
+    percentaje: 100,
+    icon : "./img/items/design.png",
+    state : "studying",
+    vertical : "design"
+  },
+  {
+    deadline:"",
+    authorLink: "#",
+    nftLink: "#",
+    quantityLink: "#",
+    authorImg: "./img/author/author-9.jpg",
+    previewImg: "./img/items/static-7.jpg",
+    title: "Alys Python",
+    code : "ALP001",
+    price: 40,
+    quantity: 200,
+    percentaje: 100,
+    icon : "./img/items/data.png",
+    state : "working",
+    vertical : "data"
+  }]
 
 
-export default class Responsive extends Component {
-
-    dummyData = [{
-        deadline:"December, 30, 2021",
-        authorLink: "#",
-        nftLink: "#",
-        bidLink: "#",
-        authorImg: "./img/author/author-1.jpg",
-        previewImg: "./img/items/static-1.jpg",
-        title: "UX Omnia",
-        price: 3,
-        bid: "1/20",
-        likes: 50
-    },
-    
-    {
-        deadline:"",
-        authorLink: "#",
-        nftLink: "#",
-        bidLink: "#",
-        authorImg: "./img/author/author-11.jpg",
-        previewImg: "./img/items/static-3.jpg",
-        title: "Next Graphico",
-        price: 5,
-        bid: "1/11",
-        likes: 97
-    },
-    {
-        deadline:"January, 1, 2022",
-        authorLink: "#",
-        nftLink: "#",
-        bidLink: "#",
-        authorImg: "./img/author/author-12.jpg",
-        previewImg: "./img/items/static-4.jpg",
-        title: "SQL Alpha",
-        price: 4,
-        bid: "1/20",
-        likes: 50
-    },
-    {
-        deadline:"",
-        authorLink: "#",
-        nftLink: "#",
-        bidLink: "#",
-        authorImg: "./img/author/author-7.jpg",
-        previewImg: "./img/items/static-5.jpg",
-        title: "UI Spiro",
-        price: 6,
-        bid: "1/20",
-        likes: 50
-    },
-    {
-        deadline:"",
-        authorLink: "#",
-        nftLink: "#",
-        bidLink: "#",
-        authorImg: "./img/author/author-9.jpg",
-        previewImg: "./img/items/static-6.jpg",
-        title: "Alys Python",
-        price: 5,
-        bid: "1/20",
-        likes: 50
-    }]
-    
-   
-  constructor(props) {
-    super(props);
-    this.state = {
-        nfts: this.dummyData.slice(0,8),
-        height: 0
+export default function App() {
+    const [isChecked, setIsChecked] = useState(false);
+  
+    const handleOnChange = () => {
+      setIsChecked(!isChecked);
     };
-    this.onImgLoad = this.onImgLoad.bind(this);
-    }
-
-    loadMore = () => {
-        let nftState = this.state.nfts
-        let start = nftState.length
-        let end = nftState.length+4
-        this.setState({
-            nfts: [...nftState, ...(this.dummyData.slice(start, end))]
-        });
-    }
-
-    onImgLoad({target:img}) {
-        let currentHeight = this.state.height;
-        if(currentHeight < img.offsetHeight) {
-            this.setState({
-                height: img.offsetHeight
-            })
-        }
-    }
-    
-
- render() {
-  return (
-    <div className='row'>
-        {this.state.nfts.map( (nft, index) => (
-            <div key={index} className="d-item col-lg-4 col-md-6 col-sm-6 col-xs-12 mb-4">
-                <div className="nft__item m-0">
+  
+    return (
+      <div className="App">
+        Select your pizza topping:
+        <div className="topping">
+          <input
+            type="checkbox"
+            id="topping"
+            name="topping"
+            value="Paneer"
+            checked={isChecked}
+            onChange={handleOnChange}
+          />
+          Paneer
+        </div>
+        <div className="result">
+          Above checkbox is {isChecked ? "checked" : "un-checked"}.
+        </div>
+        <div className='row'>
+                {dummyData.map( (nft, index) => (
+                  
+                    <div key={index} className="d-item col-lg-4 col-md-6 col-sm-6 col-xs-12 mb-4">
+                        <div className="nft__item m-0" style={{height : `28rem`}}>
+                            
+                            <div className="author_list_pp" style={{width : `3rem`, height : `3rem`, background : `white`}}>
+                                <span>                                    
+                                    <img className="lazy" src={nft.icon} alt=""/>
+                                </span>
+                            </div>
+                            <div className="nft__item_wrap">
+                                <span>
+                                    <img  src={nft.previewImg} style={{height : `18rem`}}className="lazy nft__item_preview" alt=""/>
+                                </span>
+                            </div>
+                            <div className="nft__item_info">
+                                <span onClick={()=> window.open(nft.nftLink, "_self")}>
+                                    <h4>{nft.title} <span style={{color : `grey`, float : `right`}}>{nft.code}</span></h4>
+                                </span>
+                                <div className="nft__item_price">
+                                    ${nft.price}<span> per unit</span>
+                                </div>
+                                <div className="nft__item_price">
+                                    {nft.quantity}  available <span style={{color : `grey`, float : `right`}}>({nft.percentaje})%</span>
+                                </div>
+                                <div className="nft__item_action">
+                                    <span >Details</span>
+                                </div>
+                                <div className="nft__item_like">
+                                   <i className="fa icon_circle-empty"></i><span>{nft.state}</span>
+                                </div> 
+                                <div className="nft__item_like">
+                                   <span></span>
+                                </div>                   
+                            </div> 
+                            
+                        </div>
+                    </div>  
                     
-                    <div className="author_list_pp">
-                       
+                ))}
+                { dummyData.length !== dummyData.length &&
+                    <div className='col-lg-12'>
+                        <div className="spacer-single"></div>
+                        <span className="btn-main lead m-auto">Load More</span>
                     </div>
-                    <div className="nft__item_wrap" style={{height: `${this.state.height}px`}}>
-                        <span>
-                            <img onLoad={this.onImgLoad} src={nft.previewImg} className="lazy nft__item_preview" alt=""/>
-                        </span>
-                    </div>
-                    <div className="nft__item_info">
-                        <span onClick={()=> window.open(nft.nftLink, "_self")}>
-                            <h4>{nft.title}</h4>
-                        </span>
-                        <div className="nft__item_price">
-                            {nft.price}<span>Matic</span>
-                        </div>
-                        <div className="nft__item_action">
-                            <span onClick={()=>addToken(nft.index, nft.deadline, nft.authorLink, nft.previewLink, nft.authorImg, nft.title, nft.price, nft.quantity, nft.likes)}>Add to cart</span>
-                        </div>
-                        <div className="nft__item_like">
-                            <i className="fa fa-check"></i><span></span>
-                        </div>                            
-                    </div> 
-                </div>
-            </div>  
-        ))}
-        { this.state.nfts.length !== this.dummyData.length &&
-            <div className='col-lg-12'>
-                <div className="spacer-single"></div>
-                <span onClick={() => this.loadMore()} className="btn-main lead m-auto">Load More</span>
-            </div>
-        }
-    </div>              
+                }
+            </div>        
+      </div>
     );
-}
-}
+  }
