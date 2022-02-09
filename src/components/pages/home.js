@@ -23,7 +23,7 @@ const home= () => (
         <div className='row'>
           <div className='col-lg-12'>
             <div className='text-center'>
-              <h2>Best Pools</h2>
+              <h2>Most Recent</h2>
               <div className="small-border"></div>
             </div>
           </div>
