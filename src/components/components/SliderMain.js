@@ -47,7 +47,7 @@ const slidermain= () => (
               <div className="mb-sm-30"></div>
               </Reveal>
           </div>
-          <div className="col-md-6 xs-hide" style={{paddingTop : `2rem`}}>
+          <div className="col-md-6 xs-hide" style={{marginTop : `100px`}}>
             <Reveal className='onStep' keyframes={fadeIn} delay={900} duration={1500} triggerOnce>
               <img src="./img/misc/nft.png" className="lazy img-fluid" alt=""/>
             </Reveal>
