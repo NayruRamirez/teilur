@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from '../components/footer';
 import { createGlobalStyle } from 'styled-components';
-import { ListGroup } from 'react-bootstrap';
+
 
 const GlobalStyles = createGlobalStyle`
   .navbar {

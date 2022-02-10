@@ -4,23 +4,6 @@ import { header } from 'react-bootstrap';
 import { Link } from '@reach/router';
 import useOnclickOutside from "react-cool-onclickoutside";
 import Web3 from "web3";
-const connectWallet = function(){
-
-    if (window.ethereum) {
-  
-      // (async () => {
-      //   const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' })
-      //   console.log(`Accounts: ${accounts}`)
-      // })()
-  
-      (async () => {
-        const web3 = new Web3(window.ethereum);
-        const accounts = await web3.eth.requestAccounts();
-        const youAccount = `${accounts[0].slice(0,7)}...`;
-        document.getElementById('account').innerText = youAccount
-      })()
-    }
-  }
 
 setDefaultBreakpoints([
   { xs: 0 },
@@ -234,7 +217,7 @@ const Header= function() {
               </BreakpointProvider>
               
               <div className='mainside'>
-                <NavLink to="/wallet" className="btn-main"  onClick={connectWallet()}>
+                <NavLink to="/wallet" className="btn-main">
                   <i className="fa  icon_wallet"></i> &nbsp; &nbsp; &nbsp;
                   <span id="account">Connect wallet</span> &nbsp; &nbsp;</NavLink>
               </div>
