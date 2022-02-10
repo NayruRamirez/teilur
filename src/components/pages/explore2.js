@@ -156,25 +156,24 @@ const explore= () => (
                             
                             <div className="nft__item_wrap">
                                 <span>
-                                    <img  src={nft.previewImg} style={{height : `18rem`}}className="lazy nft__item_preview" alt=""/>
+                                    <img  src={nft.previewImg} style={{maxHeight : `18rem`}}className="lazy nft__item_preview" alt=""/>
                                 </span>
                             </div>
                             <div className="nft__item_info">
                                 <span onClick={()=> window.open(nft.nftLink, "_self")}>
-                                    <h4>{nft.title} <span style={{color : `grey`, float : `right`}}>{nft.code}</span></h4>
+                                    <h4>{nft.title} <span style={{color : `grey`, float : `right`}}> Code :{nft.code}</span></h4>
                                 </span>
                                 <div className="nft__item_price">
                                     ${nft.price}<span> per unit</span>
                                 </div>
                                 <div className="nft__item_price">
-                                    {nft.quantity}  available <span style={{color : `grey`, float : `right`}}>({nft.percentaje})%</span>
+                                    {nft.quantity}  available ({nft.percentaje})%
                                 </div>
                                 <div className="nft__item_action">
-                                    <span >Details</span>
-                                </div>
-                                <div className="nft__item_like">
-                                <i className="fa icon_circle-empty"></i><span>{nft.state}</span>
-                                </div>                   
+                                    <span >Details</span><span style={{color : `#cfcece`, float : `right`}}>
+                                        <i className="fa fa-circle"></i> &nbsp; &nbsp;
+                                    {nft.state}</span>
+                                </div>              
                             </div> 
                         </div>
                     </div>  
