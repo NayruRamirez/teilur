@@ -141,6 +141,11 @@ const explore= () => (
                       <label htmlFor="onauction">Studying</label>
                   </div>
 
+                  <div className="de_checkbox">
+                      <input id="onauction" name="onauction" type="checkbox" value="onauction"/>
+                      <label htmlFor="onauction">Applying</label>
+                  </div>
+
               </div>
           </div>
 
