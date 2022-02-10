@@ -2,25 +2,25 @@ import React from 'react';
 import Web3 from "web3";
 const connectWallet = function(){
 
-    if (window.ethereum) {
-  
-      // (async () => {
-      //   const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' })
-      //   console.log(`Accounts: ${accounts}`)
-      // })()
-  
-      (async () => {
-        const web3 = new Web3(window.ethereum);
-        const accounts = await web3.eth.requestAccounts();
-        console.log(`Accounts: ${accounts[0]}`);
-      
-       
-      })()
-    }
+  if (window.ethereum) {
+
+    // (async () => {
+    //   const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' })
+    //   console.log(`Accounts: ${accounts}`)
+    // })()
+
+    (async () => {
+      const web3 = new Web3(window.ethereum);
+      const accounts = await web3.eth.requestAccounts();
+      console.log(`Accounts: ${accounts[0]}`);
+      document.getElementById('account').innerText = `${accounts[0].slice(0,10)}`
+     
+    })()
   }
+}
 const Wallet= () => (
   <div className="row">
-    <div className="col-lg-4 mb30" onClick={connectWallet}>
+    <div className="col-lg-4 mb30" onClick={connectWallet()}>
         <span className="box-url">
             
             <img src="./img/wallet/1.png" alt="" className="mb20"/>

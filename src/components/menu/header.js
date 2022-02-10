@@ -5,6 +5,7 @@ import { Link } from '@reach/router';
 import useOnclickOutside from "react-cool-onclickoutside";
 import Web3 from "web3";
 
+
 setDefaultBreakpoints([
   { xs: 0 },
   { l: 1199 },
@@ -219,7 +220,7 @@ const Header= function() {
               <div className='mainside'>
                 <NavLink to="/wallet" className="btn-main">
                   <i className="fa  icon_wallet"></i> &nbsp; &nbsp; &nbsp;
-                  <span id="account">Connect wallet</span> &nbsp; &nbsp;</NavLink>
+                  <span id="account" >Connect wallet</span> &nbsp; &nbsp;</NavLink>
               </div>
                   
       </div>
