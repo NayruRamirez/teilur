@@ -20,7 +20,7 @@ const connectWallet = function(){
 }
 const Wallet= () => (
   <div className="row">
-    <div className="col-lg-4 mb30" onClick={connectWallet()}>
+    <div className="col-lg-4 mb30" onClick={()=>connectWallet()}>
         <span className="box-url">
             
             <img src="./img/wallet/1.png" alt="" className="mb20"/>
