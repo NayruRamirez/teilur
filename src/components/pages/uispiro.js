@@ -201,6 +201,12 @@ return (
                                             </div>
                                                                         
                                         </div>
+                                    <div className="col-lg-6 col-md-6 col-sm-6">
+                                        <strong style={{color : `black`}}><p>Price</p></strong>
+                                        <h5>$20.00 per unit <span style={{color : `grey`, fontSize : `small`}}>&nbsp; &nbsp; &nbsp; &nbsp; (1,910 units available)</span></h5>
+
+                                   
+                                    </div>
                                 <div className="de_tab_content">
                                 <ul className="de_nav">
                                     <li id='Mainbtn2' className="active"><span>Buy</span></li>
