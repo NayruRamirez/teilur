@@ -193,11 +193,16 @@ return (
                                                 </div>
                                             </div>
                                                                         
-                                        </div>
-                                </div>
+                                    </div>
+                                    <div className="col-lg-6 col-md-6 col-sm-6">
+                                        <strong style={{color : `black`}}><p>Price</p></strong>
+                                        <h5>$20.00 per unit <span style={{color : `grey`, fontSize : `small`}}>&nbsp; &nbsp; &nbsp; &nbsp; (1,910 units available)</span></h5>
+                               
+                                    </div>
+                                     </div>
                                 <div className="de_tab_content">
                                 <ul className="de_nav" style={{display : `flex`, flexDirection : `row`, float : `rigth`}}>
-                                    <button id='' className='btn-main'><span>Buy</span></button>&nbsp; &nbsp; &nbsp;
+                                    <button id='' className='btn-main'><span>Buy</span></button>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                                     <button id='' className='btn-main' style={{background : `#4a76cc75`}}><span>Place a bid</span></button>
                                 </ul>
                                     

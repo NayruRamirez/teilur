@@ -169,7 +169,7 @@ const explore= () => (
                                     <h4>{nft.title} <span style={{color : `grey`, float : `right`}}> Code :{nft.code}</span></h4>
                                 </span>
                                 <div className="nft__item_price">
-                                    ${nft.price}<span> per unit</span>
+                                    ${nft.price} per unit
                                 </div>
                                 <div className="nft__item_price">
                                     {nft.quantity}  available ({nft.percentaje})%

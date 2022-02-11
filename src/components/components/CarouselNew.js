@@ -101,7 +101,7 @@ export default class Responsive extends Component {
               <div className="nft__item">
                   
                   
-                  <div className="nft__item_wrap" style={{height: `${this.state.height}px`}}>
+                  <div className="nft__item_wrap" style={{height: `18rem`}}>
                     <Outer>
                       <span>
                           <img src="./img/items/static-10.jpg" className="lazy nft__item_preview" onLoad={this.onImgLoad} alt=""/>
@@ -110,17 +110,21 @@ export default class Responsive extends Component {
                   </div>
                   <div className="nft__item_info">
                       <span onClick={()=> window.open("/uxomnia", "_self")}>
-                          <h4>UX Omnia</h4>
+                          <h4>UX Omnia <span style={{color : `grey`, float : `right`}}> Code: UXO001A</span></h4>
                       </span>
                       <div className="nft__item_price">
-                          $20 Price per unit
+                          $20 per unit
+                      </div>
+                      <div className="nft__item_price">
+                        2,000  available (100)%
                       </div>
                       <div className="nft__item_action">
                           <span onClick={()=> window.open("/uxomnia", "_self")}>Details</span>
+                          <span style={{color : `#cfcece`, float : `right`}}>
+                            <i className="fa fa-circle"></i> &nbsp; &nbsp;
+                          Applying</span>
                       </div>
-                      <div className="nft__item_like">
-                          <i className="fa  icon_circle-empty"></i><span></span>
-                      </div>                            
+                      <br></br>                      
                   </div> 
               </div>
             </div>
@@ -130,7 +134,7 @@ export default class Responsive extends Component {
               <div className="nft__item">
                   
                   
-                  <div className="nft__item_wrap" style={{height: `${this.state.height}px`}}>
+                  <div className="nft__item_wrap" style={{height: `18rem`}}>
                     <Outer>
                       <span>
                           <img src="./img/items/static-9.jpg" className="lazy nft__item_preview" onLoad={this.onImgLoad} alt=""/>
@@ -139,17 +143,21 @@ export default class Responsive extends Component {
                   </div>
                   <div className="nft__item_info">
                       <span onClick={()=> window.open("/nextgraphico", "_self")}>
-                          <h4>Next Graphico</h4>
+                          <h4>Next Graphico<span style={{color : `grey`, float : `right`}}> Code: NXGO001A</span></h4>
                       </span>
                       <div className="nft__item_price">
-                          $100 Price per unit
+                          $20 per unit
+                      </div>
+                      <div className="nft__item_price">
+                        2,000  available (100)%
                       </div>
                       <div className="nft__item_action">
                           <span onClick={()=> window.open("/nextgraphico", "_self")}>Details</span>
+                          <span style={{color : `#cfcece`, float : `right`}}>
+                            <i className="fa fa-circle"></i> &nbsp; &nbsp;
+                          Studying</span>
                       </div>
-                      <div className="nft__item_like">
-                          <i className="fa  icon_circle-empty"></i><span></span>
-                      </div>                        
+                      <br></br>                      
                   </div> 
               </div>
             </div>
@@ -159,7 +167,7 @@ export default class Responsive extends Component {
               <div className="nft__item">
                   
                   
-                  <div className="nft__item_wrap" style={{height: `${this.state.height}px`}}>
+                  <div className="nft__item_wrap" style={{height: `18rem`}}>
                     <Outer>
                       <span>
                           <img src="./img/items/static-4.jpg" className="lazy nft__item_preview" onLoad={this.onImgLoad} alt=""/>
@@ -168,17 +176,21 @@ export default class Responsive extends Component {
                   </div>
                   <div className="nft__item_info">
                       <span onClick={()=> window.open("/sqlalpha", "_self")}>
-                          <h4>SQL Alpha</h4>
+                          <h4>SQL Alpha<span style={{color : `grey`, float : `right`}}> Code: SQL001A</span></h4>
                       </span>
                       <div className="nft__item_price">
-                          $40 Price per unit
+                          $20 per unit
+                      </div>
+                      <div className="nft__item_price">
+                        2,000  available (100)%
                       </div>
                       <div className="nft__item_action">
                           <span onClick={()=> window.open("/sqlalpha", "_self")}>Details</span>
+                          <span style={{color : `#cfcece`, float : `right`}}>
+                            <i className="fa fa-circle"></i> &nbsp; &nbsp;
+                          Working</span>
                       </div>
-                      <div className="nft__item_like">
-                          <i className="fa  icon_circle-empty"></i><span></span>
-                      </div>                            
+                      <br></br>                      
                   </div> 
               </div>
             </div>
@@ -188,7 +200,7 @@ export default class Responsive extends Component {
               <div className="nft__item">
                   
                   
-                  <div className="nft__item_wrap" style={{height: `${this.state.height}px`}}>
+                  <div className="nft__item_wrap"style={{height: `18rem`}}>
                     <Outer>
                       <span>
                           <img src="./img/items/static-12.jpg" className="lazy nft__item_preview" onLoad={this.onImgLoad} alt=""/>
@@ -197,17 +209,21 @@ export default class Responsive extends Component {
                   </div>
                   <div className="nft__item_info">
                       <span onClick={()=> window.open("/alyspython", "_self")}>
-                          <h4>Alys Python</h4>
+                          <h4>Alys Python<span style={{color : `grey`, float : `right`}}> Code: ALP'001A</span></h4>
                       </span>
                       <div className="nft__item_price">
-                          $20 Price per unit
+                          $20 per unit
+                      </div>
+                      <div className="nft__item_price">
+                        2,000  available (100)%
                       </div>
                       <div className="nft__item_action">
                           <span onClick={()=> window.open("/alyspython", "_self")}>Details</span>
+                          <span style={{color : `#cfcece`, float : `right`}}>
+                            <i className="fa fa-circle"></i> &nbsp; &nbsp;
+                          Studying</span>
                       </div>
-                      <div className="nft__item_like">
-                          <i className="fa  icon_circle-empty"></i><span></span>
-                      </div>                           
+                      <br></br>                      
                   </div> 
               </div>
             </div>
@@ -217,7 +233,7 @@ export default class Responsive extends Component {
               <div className="nft__item">
                   
                   
-                  <div className="nft__item_wrap" style={{height: `${this.state.height}px`}}>
+                  <div className="nft__item_wrap" style={{height: `18rem`}}>
                     <Outer>
                       <span>
                           <img src="./img/items/static-7.jpg" className="lazy nft__item_preview" onLoad={this.onImgLoad} alt=""/>
@@ -226,20 +242,26 @@ export default class Responsive extends Component {
                   </div>
                   <div className="nft__item_info">
                       <span onClick={()=> window.open("/uispiro", "_self")}>
-                          <h4>UI Spiro</h4>
+                          <h4>UI Spiro<span style={{color : `grey`, float : `right`}}> Code: UXO001A</span></h4>
                       </span>
                       <div className="nft__item_price">
-                          $40 Price per unit
+                          $20 per unit
+                      </div>
+                      <div className="nft__item_price">
+                        2,000  available (100)%
                       </div>
                       <div className="nft__item_action">
                           <span onClick={()=> window.open("/uispiro", "_self")}>Details</span>
+                          <span style={{color : `#cfcece`, float : `right`}}>
+                            <i className="fa fa-circle"></i> &nbsp; &nbsp;
+                          Working</span>
                       </div>
-                      <div className="nft__item_like">
-                          <i className="fa  icon_circle-empty"></i><span></span>
-                      </div>                          
+                      <br></br>                      
+                  </div> 
+                                                
                   </div> 
               </div>
-            </div>
+            
             </CustomSlide>
             
           </Slider>
