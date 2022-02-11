@@ -172,7 +172,7 @@ const Header= function() {
                               <NavLink to="/explore2">Pools</NavLink>
                               <NavLink to="/rangking">Ranking</NavLink>
                               <NavLink to="/colection">Your Nft's</NavLink>
-                              <NavLink to="/ItemDetail">Items Details</NavLink>
+                             
                               <NavLink to="/Auction">Live Auction</NavLink>
                            
                               </div>
