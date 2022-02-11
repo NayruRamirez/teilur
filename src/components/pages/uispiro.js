@@ -170,6 +170,37 @@ return (
                                     )}
                                     
                                 </div>
+                                <div className="row mt-5">
+                                            <div className="col-lg-6 col-md-6 col-sm-6">
+                                                <div className="nft_attr">
+                                                    <h5>Background</h5>
+                                                    <h4>Yellowish Sky</h4>
+                                                    <span>85% have this trait</span>
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-6 col-md-6 col-sm-6">
+                                                <div className="nft_attr">
+                                                    <h5>Eyes</h5>
+                                                    <h4>Purple Eyes</h4>
+                                                    <span>14% have this trait</span>
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-6 col-md-6 col-sm-6">
+                                                <div className="nft_attr">
+                                                    <h5>Nose</h5>
+                                                    <h4>Small Nose</h4>
+                                                    <span>45% have this trait</span>
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-6 col-md-6 col-sm-6">
+                                                <div className="nft_attr">
+                                                    <h5>Mouth</h5>
+                                                    <h4>Smile Red Lip</h4>
+                                                    <span>61% have this trait</span>
+                                                </div>
+                                            </div>
+                                                                        
+                                        </div>
                                 <div className="de_tab_content">
                                 <ul className="de_nav">
                                     <li id='Mainbtn2' className="active"><span>Buy</span></li>
@@ -177,6 +208,7 @@ return (
                                 </ul>
                                     
                                 </div>
+
                                 
                                 
                             </div>
