@@ -1,9 +1,9 @@
 import React from 'react';
 import SliderMain from '../components/SliderMain';
 import FeatureBox from '../components/FeatureBox';
-import CarouselCollection from '../components/CarouselCollection';
+
 import CarouselNew from '../components/CarouselNew';
-import AuthorList from '../components/authorList';
+
 import Catgor from '../components/Catgor';
 import Footer from '../components/footer';
 

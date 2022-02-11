@@ -1,4 +1,5 @@
 import React from "react";
+
 import Clock from "../components/Clock";
 import Footer from '../components/footer';
 import { createGlobalStyle } from 'styled-components';
@@ -43,6 +44,9 @@ const handleBtnClick1 = (): void => {
   document.getElementById("Mainbtn").classList.remove("active");
 };
 
+    const [openCheckout, setOpenCheckout] = React.useState(false);
+    const [openCheckoutbid, setOpenCheckoutbid] = React.useState(false);
+
 return (
 <div>
 <GlobalStyles/>
@@ -69,10 +73,10 @@ return (
                                     While many companies design user experiences, the term is most often associated 
                                     with digital design for websites and apps.</p>
 
-                                <h6></h6>
+                                
                                 <div className="item_author">                                    
                                     <div className="author_list_pp">
-                                        
+                                        hi
                                     </div>                                    
                                     <div className="author_list_info">
                                        
@@ -201,23 +205,111 @@ return (
                                    
                                     </div>
                                 <div className="de_tab_content">
-                                <ul className="de_nav" style={{display : `flex`, flexDirection : `row`, float : `rigth`}}>
-                                    <button id='' className='btn-main'><span>Buy</span></button>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                    <button id='' className='btn-main' style={{background : `#4a76cc75`}}><span>Place a bid</span></button>
-                                </ul>
+                                <div className="d-flex flex-row mt-5">
+                                    <button className='btn-main lead mb-5 mr15' onClick={() => setOpenCheckout(true)}>Buy Now</button>
+                                    <button className='btn-main btn2 lead mb-5' onClick={() => setOpenCheckoutbid(true)}>Place Bid</button>
+                                </div>
                                     
                                 </div>
-                                
-                                
+                                </div>
                             </div>
-                                
                             </div>
                         </div>
 
     </div>
   </section>
+  { openCheckout &&
+            <div className='checkout'>
+            <div className='maincheckout'>
+            <button className='btn-close' onClick={() => setOpenCheckout(false)}>x</button>
+                <div className='heading'>
+                    <h3>Checkout</h3>
+                </div>
+              <p>You are about to purchase a <span className="bold">AnimeSailorClub #304</span> 
+              <span className="bold">from Monica Lucas</span></p>
+                <div className='detailcheckout mt-4'>
+                    <div className='listcheckout'>
+                  <h6>
+                    Enter quantity. 
+                    <span className="color">10 available</span>
+                  </h6>
+                  <input type="text" name="buy_now_qty" id="buy_now_qty" className="form-control"/>
+                    </div>
+
+                </div>
+                <div className='heading mt-3'>
+                    <p>Your balance</p>
+                    <div className='subtotal'>
+                    10.67856 ETH
+                    </div>
+                </div>
+              <div className='heading'>
+                <p>Service fee 2.5%</p>
+                <div className='subtotal'>
+                0.00325 ETH
+                </div>
+              </div>
+              <div className='heading'>
+                <p>You will pay</p>
+                <div className='subtotal'>
+                0.013325 ETH
+                </div>
+              </div>
+                <button className='btn-main lead mb-5'>Checkout</button>
+            </div>
+            </div>
+        }
+        { openCheckoutbid &&
+            <div className='checkout'>
+            <div className='maincheckout'>
+            <button className='btn-close' onClick={() => setOpenCheckoutbid(false)}>x</button>
+                <div className='heading'>
+                    <h3>Place a Bid</h3>
+                </div>
+              <p>You are about to purchase a <span className="bold">AnimeSailorClub #304</span> 
+              <span className="bold">from Monica Lucas</span></p>
+                <div className='detailcheckout mt-4'>
+                    <div className='listcheckout'>
+                        <h6>
+                         Your bid (ETH)
+                        </h6>
+                        <input type="text" className="form-control"/>
+                    </div>
+                </div>
+                <div className='detailcheckout mt-3'>
+                    <div className='listcheckout'>
+                        <h6>
+                         Enter quantity. 
+                        <span className="color">10 available</span>
+                        </h6>
+                        <input type="text" name="buy_now_qty" id="buy_now_qty" className="form-control"/>
+                    </div>
+                </div>
+                <div className='heading mt-3'>
+                    <p>Your balance</p>
+                    <div className='subtotal'>
+                    10.67856 ETH
+                    </div>
+                </div>
+              <div className='heading'>
+                <p>Service fee 2.5%</p>
+                <div className='subtotal'>
+                0.00325 ETH
+                </div>
+              </div>
+              <div className='heading'>
+                <p>You will pay</p>
+                <div className='subtotal'>
+                0.013325 ETH
+                </div>
+              </div>
+                <button className='btn-main lead mb-5'>Checkout</button>
+            </div>
+            </div>
+        }
 
   <Footer />
+ 
 </div>
 );
 }

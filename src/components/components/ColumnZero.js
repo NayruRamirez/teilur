@@ -1,15 +1,5 @@
 import React, { Component } from "react";
-import styled from "styled-components";
 
-
-const Outer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  overflow: hidden;
-  border-radius: 8px;
-`;
 
 export default class Responsive extends Component {
   
