@@ -120,7 +120,7 @@ const Header= function() {
                             <div className="dropdown" onClick={closeMenu1}>
                               <NavLink to="/explore2" onClick={() => btn_icon(!showmenu)}>Pools</NavLink>
                               <NavLink to="/rangking" onClick={() => btn_icon(!showmenu)}>Ranking</NavLink>
-                              <NavLink to="/colection" onClick={() => btn_icon(!showmenu)}>Your Nft's</NavLink>
+                             
                           
                               <NavLink to="/Auction" onClick={() => btn_icon(!showmenu)}>Live Auction</NavLink>
                               
@@ -169,7 +169,7 @@ const Header= function() {
                               <div className="dropdown" onClick={closeMenu1}>
                               <NavLink to="/explore2">Pools</NavLink>
                               <NavLink to="/rangking">Ranking</NavLink>
-                              <NavLink to="/colection">Your Nft's</NavLink>
+                             
                              
                               <NavLink to="/Auction">Live Auction</NavLink>
                            
