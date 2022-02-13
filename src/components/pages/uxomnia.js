@@ -226,10 +226,10 @@ return (
                 </div>
                 <div className="pool-info">
                     <div className="left">
-                         Talent pool name:&nbsp; <strong className="black">Alpha SQL</strong>
+                         Talent pool name:&nbsp; <strong className="black">UX Omnia</strong>
                     </div>
                     <div className="right">
-                        Code: &nbsp;<strong className="black">SQLX1092</strong>
+                        Code: &nbsp;<strong className="black">UX1092</strong>
                     </div>
                 </div>
                 
