@@ -17,9 +17,9 @@ const useEffect = function(){
         const balance = await web3.eth.getBalance(accounts[0]);
         console.log(`Balance: ${balance}`);
         const accountInfo = document.getElementById('wallet');
-        const balanceInfo = document.getElementById('balance');
-        accountInfo.textContent = `Account : ${accounts[0]}`;
-        balanceInfo.textContent = `Balance : ${balance}`;
+       
+        accountInfo.textContent = `${accounts[0].slice(0,5)}...${accounts[0].slice(9, 12)}`;
+       
       })()
     }
   }
@@ -33,16 +33,17 @@ const Account = function(){
                 <div className="d_profile">
                           <div className="profile_avatar">
                               <div className="d_profile_img">
-                                  <img src="./img/author/author-2.jpg" alt="" onLoad={(useEffect)}/>
+                                  <img src="./img/author/author-12.jpg" alt="" onLoad={(useEffect)}/>
                                   <i className="fa fa-check"></i>
                               </div>
                               
                               <div className="profile_name">
                                   <h4>
-                                      Your account                                              
+                                      Your Wallet                                             
                                       <div className="clearfix"></div>
-                                      <p id="wallet" className="profile_wallet"></p>
-                                      <p id="balance" className="profile_wallet"></p>
+                                      <div className="profile_wallet">
+                                        <p id="wallet"></p>
+                                      </div>
                                   </h4>
                               </div>
                           </div>

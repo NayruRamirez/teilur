@@ -3184,6 +3184,7 @@ i.font60 {
 /*** colection ***/
 #profile_banner {
     min-height: 360px;
+    
 }
 .d_coll{
   position: relative;
@@ -4301,4 +4302,17 @@ img.img-rounded{
 .subtotal{
   color: black;
   font-weight: 600;
+}
+.profile_wallet{
+  margin: 2rem;
+  border: #dfdfdf 0.1rem solid ;
+  border-radius: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly ;
+  width: 9rem;
+  height: 2rem;
+  align-items: center;
 }

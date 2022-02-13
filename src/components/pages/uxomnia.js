@@ -258,7 +258,7 @@ return (
                     $2,240.00
                 </div>
               </div>
-                <button className='btn-main lead mb-12'>Buy Now</button>
+                <button className='btn-main lead mb-12' onClick={()=> window.open("/colection", "_self")}>Buy Now</button>
             </div>
             </div>
         }

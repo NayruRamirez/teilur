@@ -6,7 +6,6 @@ import Home from './pages/home';
 import Home1 from './pages/home1';
 import Home2 from './pages/home2';
 import Home3 from './pages/home3';
-import Explore from './pages/explore';
 import Explore2 from './pages/explore2';
 import Rangking from './pages/rangking';
 import Auction from './pages/Auction';
@@ -83,7 +82,7 @@ const app= () => (
         <Home1 path="/home1" />
         <Home2 path="/home2" />
         <Home3 path="/home3" />
-        <Explore path="/explore" />
+      
         <Explore2 path="/explore2">
           <Redirect to="/colection"/>
         </Explore2>
