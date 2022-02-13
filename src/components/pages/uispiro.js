@@ -2,6 +2,7 @@ import React from "react";
 import Clock from "../components/Clock";
 import Footer from '../components/footer';
 import { createGlobalStyle } from 'styled-components';
+import { Link } from '@reach/router';
 
 
 const GlobalStyles = createGlobalStyle`
@@ -258,7 +259,7 @@ const UiSpiro= function() {
                         $2,240.00
                     </div>
                   </div>
-                    <button className='btn-main lead mb-12' onClick={()=> window.open("/colection", "_self")}>Buy Now</button>
+                  <Link to="/colection" className='btn-main lead mb-12'>Buy Now</Link>
                 </div>
                 </div>
             }
