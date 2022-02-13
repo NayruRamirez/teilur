@@ -45,7 +45,7 @@ const handleBtnClick1 = (): void => {
 };
 
     const [openCheckout, setOpenCheckout] = React.useState(false);
-    const [openCheckoutbid, setOpenCheckoutbid] = React.useState(false);
+   
 
 return (
 <div>
@@ -206,8 +206,7 @@ return (
                                     </div>
                                 <div className="de_tab_content">
                                 <div className="d-flex flex-row mt-5">
-                                    <button className='btn-main lead mb-5 mr15' onClick={() => setOpenCheckout(true)}>Buy Now</button>
-                                    <button className='btn-main btn2 lead mb-5' onClick={() => setOpenCheckoutbid(true)}>Place Bid</button>
+                                    <button className='btn-main lead mb-12' onClick={() => setOpenCheckout(true)}>Buy Now</button>
                                 </div>
                                     
                                 </div>
@@ -225,89 +224,45 @@ return (
                 <div className='heading'>
                     <h3>Checkout</h3>
                 </div>
-              <p>You are about to purchase a <span className="bold">AnimeSailorClub #304</span> 
-              <span className="bold">from Monica Lucas</span></p>
-                <div className='detailcheckout mt-4'>
+                <div className="pool-info">
+                    <div className="left">
+                         Talent pool name:&nbsp; <strong className="black">Alpha SQL</strong>
+                    </div>
+                    <div className="right">
+                        Code: &nbsp;<strong className="black">SQLX1092</strong>
+                    </div>
+                </div>
+                
+                <div className='detailcheckout'>
                     <div className='listcheckout'>
-                  <h6>
-                    Enter quantity. 
-                    <span className="color">10 available</span>
-                  </h6>
-                  <input type="text" name="buy_now_qty" id="buy_now_qty" className="form-control"/>
+                        <h6># of units to purchase</h6>
+                        <input type="number" name="buy_now_qty" id="buy_now_qty" className="form-control" value="112"/>
                     </div>
-
+                    <strong className="blue">1910 units available (95.5%)</strong>
                 </div>
-                <div className='heading mt-3'>
-                    <p>Your balance</p>
-                    <div className='subtotal'>
-                    10.67856 ETH
-                    </div>
+                <div className='checkout-info'>
+                    <p>Available Balance (USDC)</p>
+                    <span className='subtotal'>
+                        $3,853.57
+                    </span>
                 </div>
-              <div className='heading'>
-                <p>Service fee 2.5%</p>
+              <div className='checkout-info'>
+                <p>Unit Price (USDC)</p>
                 <div className='subtotal'>
-                0.00325 ETH
+                    $20.00
                 </div>
               </div>
-              <div className='heading'>
-                <p>You will pay</p>
+              <div className='checkout-info'>
+                <p>Total Cost (USDC)</p>
                 <div className='subtotal'>
-                0.013325 ETH
+                    $2,240.00
                 </div>
               </div>
-                <button className='btn-main lead mb-5'>Checkout</button>
+                <button className='btn-main lead mb-12'>Buy Now</button>
             </div>
             </div>
         }
-        { openCheckoutbid &&
-            <div className='checkout'>
-            <div className='maincheckout'>
-            <button className='btn-close' onClick={() => setOpenCheckoutbid(false)}>x</button>
-                <div className='heading'>
-                    <h3>Place a Bid</h3>
-                </div>
-              <p>You are about to purchase a <span className="bold">AnimeSailorClub #304</span> 
-              <span className="bold">from Monica Lucas</span></p>
-                <div className='detailcheckout mt-4'>
-                    <div className='listcheckout'>
-                        <h6>
-                         Your bid (ETH)
-                        </h6>
-                        <input type="text" className="form-control"/>
-                    </div>
-                </div>
-                <div className='detailcheckout mt-3'>
-                    <div className='listcheckout'>
-                        <h6>
-                         Enter quantity. 
-                        <span className="color">10 available</span>
-                        </h6>
-                        <input type="text" name="buy_now_qty" id="buy_now_qty" className="form-control"/>
-                    </div>
-                </div>
-                <div className='heading mt-3'>
-                    <p>Your balance</p>
-                    <div className='subtotal'>
-                    10.67856 ETH
-                    </div>
-                </div>
-              <div className='heading'>
-                <p>Service fee 2.5%</p>
-                <div className='subtotal'>
-                0.00325 ETH
-                </div>
-              </div>
-              <div className='heading'>
-                <p>You will pay</p>
-                <div className='subtotal'>
-                0.013325 ETH
-                </div>
-              </div>
-                <button className='btn-main lead mb-5'>Checkout</button>
-            </div>
-            </div>
-        }
-
+       
   <Footer />
  
 </div>
