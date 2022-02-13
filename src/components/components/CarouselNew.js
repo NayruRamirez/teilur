@@ -209,7 +209,7 @@ export default class Responsive extends Component {
                   </div>
                   <div className="nft__item_info">
                       <span onClick={()=> window.open("/alyspython", "_self")}>
-                          <h4>Alys Python<span style={{color : `grey`, float : `right`}}> Code: ALP'001A</span></h4>
+                          <h4>Alys Python<span style={{color : `grey`, float : `right`}}> Code: ALP001A</span></h4>
                       </span>
                       <div className="nft__item_price">
                           $20 per unit
