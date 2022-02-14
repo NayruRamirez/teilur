@@ -190,7 +190,7 @@ return (
                                       ${nft.price} per unit
                                   </div>
                                   <div className="nft__item_price">
-                                      {nft.quantity}  available ({nft.percentaje})%
+                                      You own {nft.quantity-199} 
                                   </div>
                                   <div className="nft__item_action">
                                       <span >Details</span><span style={{color : `#cfcece`, float : `right`}}>
@@ -233,7 +233,7 @@ return (
                                         ${nft.price} per unit
                                     </div>
                                     <div className="nft__item_price">
-                                        {nft.quantity}  available ({nft.percentaje})%
+                                        You own {nft.quantity} 
                                     </div>
                                     <div className="nft__item_action">
                                         <span >Details</span><span style={{color : `#cfcece`, float : `right`}}>
@@ -276,7 +276,7 @@ return (
                                         ${nft.price} per unit
                                     </div>
                                     <div className="nft__item_price">
-                                        {nft.quantity}  available ({nft.percentaje})%
+                                        You own {nft.quantity} 
                                     </div>
                                     <div className="nft__item_action">
                                         <span >Details</span><span style={{color : `#cfcece`, float : `right`}}>
@@ -320,7 +320,7 @@ return (
                                           ${nft.price} per unit
                                       </div>
                                       <div className="nft__item_price">
-                                          {nft.quantity}  available ({nft.percentaje})%
+                                          You own {nft.quantity} 
                                       </div>
                                       <div className="nft__item_action">
                                           <span >Details</span><span style={{color : `#cfcece`, float : `right`}}>
