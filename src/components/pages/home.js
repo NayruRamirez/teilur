@@ -10,7 +10,7 @@ import Footer from '../components/footer';
 
 const home= () => (
   <div>
-      <section className="jumbotron breadcumb no-bg h-vh" style={{backgroundImage: `url(${'./img/bg-shape-1.jpg'})`}}>
+      <section className="jumbotron breadcumb no-bg h-vh" >
          <SliderMain/>
       </section>
 
