@@ -115,9 +115,7 @@ export default class Responsive extends Component {
                       <div className="nft__item_price">
                           $20 per unit
                       </div>
-                      <div className="nft__item_price">
-                        2,000  available (100)%
-                      </div>
+                      
                       <div className="nft__item_action">
                           <span onClick={()=> window.open("/uxomnia", "_self")}>Details</span>
                           <span style={{color : `#cfcece`, float : `right`}}>
@@ -148,9 +146,7 @@ export default class Responsive extends Component {
                       <div className="nft__item_price">
                           $20 per unit
                       </div>
-                      <div className="nft__item_price">
-                        2,000  available (100)%
-                      </div>
+                      
                       <div className="nft__item_action">
                           <span onClick={()=> window.open("/nextgraphico", "_self")}>Details</span>
                           <span style={{color : `#cfcece`, float : `right`}}>
@@ -181,9 +177,7 @@ export default class Responsive extends Component {
                       <div className="nft__item_price">
                           $20 per unit
                       </div>
-                      <div className="nft__item_price">
-                        2,000  available (100)%
-                      </div>
+                      
                       <div className="nft__item_action">
                           <span onClick={()=> window.open("/sqlalpha", "_self")}>Details</span>
                           <span style={{color : `#cfcece`, float : `right`}}>
@@ -214,9 +208,7 @@ export default class Responsive extends Component {
                       <div className="nft__item_price">
                           $20 per unit
                       </div>
-                      <div className="nft__item_price">
-                        2,000  available (100)%
-                      </div>
+                      
                       <div className="nft__item_action">
                           <span onClick={()=> window.open("/alyspython", "_self")}>Details</span>
                           <span style={{color : `#cfcece`, float : `right`}}>
@@ -247,9 +239,7 @@ export default class Responsive extends Component {
                       <div className="nft__item_price">
                           $20 per unit
                       </div>
-                      <div className="nft__item_price">
-                        2,000  available (100)%
-                      </div>
+                      
                       <div className="nft__item_action">
                           <span onClick={()=> window.open("/uispiro", "_self")}>Details</span>
                           <span style={{color : `#cfcece`, float : `right`}}>
